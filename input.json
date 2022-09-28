@@ -6,7 +6,6 @@
         "xp": 2,
         "abilities": [
             "HP+1",
-            "Specialvåben Tohåndssværd",
             "Firewall"
         ]
     },
@@ -57,7 +56,7 @@
         [
             0,
             0,
-            0,
+            1,
             0,
             0
         ],

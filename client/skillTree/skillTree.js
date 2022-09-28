@@ -11,7 +11,7 @@ fetch("../../input.json")
 
         for (let i = 0; i < starters.length; i++) {
             //console.log("Doing a starter");
-            mainUl.appendChild(exploreMatrix(jsonData, starters[i]));
+            mainUl.appendChild(exploreMatrix(jsonData, starters[i], true));
         }
         let nameText = jsonData.character.name;
         if (nameText[nameText.length - 1] == "s") {
@@ -23,11 +23,21 @@ fetch("../../input.json")
     });
 
 //Explores the matrix for requirements, note: Does not detect loops
-function exploreMatrix(jsonData, elementNr) {
+function exploreMatrix(jsonData, elementNr, state) {
+    state < 0 ? state = 0 : state
+    if (jsonData.character.abilities.contains(jsonData.abilities[elementNr].name)) {
+        //console.log(jsonData.abilities[elementNr].name + " bought")
+        state = 2;
+    }
+
     //console.log("Entering ExploreMatrix");
-    let li = createTreeNode(elementNr, jsonData.abilities, jsonData.character.abilities);
+    let li = createTreeNode(elementNr, jsonData.abilities, state);
+
+
+
+
+    //console.log(jsonData.abilities[elementNr].name);
     let found = false;
-    //console.log(elementNr);
     let ulTwo = document.createElement("ul");
     for (let i = 0; i < jsonData.abilityMatrix.length; i++) {
 
@@ -35,7 +45,7 @@ function exploreMatrix(jsonData, elementNr) {
 
         if (jsonData.abilityMatrix[i][elementNr] == 1) {
             //console.log("Found  AT")
-            ulTwo.appendChild(exploreMatrix(jsonData, i));
+            ulTwo.appendChild(exploreMatrix(jsonData, i, state - 1));
             li.appendChild(ulTwo);
             found = true;
         }
@@ -44,20 +54,31 @@ function exploreMatrix(jsonData, elementNr) {
         return li;
     } else {
         //console.log("Not found");
-        return createTreeNode(elementNr, jsonData.abilities, jsonData.character.abilities);
+        return createTreeNode(elementNr, jsonData.abilities, state);
     }
 }
 
-function createTreeNode(i, abilities, chrAbilities) {
+function createTreeNode(i, abilities, state) {
     let li = document.createElement("li");
     let span = document.createElement("span");
     span.setAttribute("class", "unselectable")
     span.innerText = abilities[i].name;
-    //console.log(chrAbilities);
-    if (chrAbilities.contains(abilities[i].name)) {
-        span.setAttribute("style", "background-color: #90EE90;");
-        //console.log("FOUND")
+    //console.log(abilities[i].name + " state: " + state);
+    switch (state) {
+        case 0:
+            //console.log("Red")
+            span.setAttribute("style", "background-color: #EE9090;");
+            break;
+        case 1:
+            //console.log("Yellow")
+            span.setAttribute("style", "background-color: #EEEE90;");
+            break;
+        case 2:
+            //console.log("Green")
+            span.setAttribute("style", "background-color: #90EE90;");
+            break;
     }
+    //console.log("FOUND")
 
     span.addEventListener("mouseover", (event) => {
         document.getElementById("hoverName").innerText = abilities[i].name;
@@ -101,21 +122,21 @@ var elmnt = document.getElementById("skillTreeDiv");
 let enableDrag = false;
 var posX = 0, posY = 0, posXmouse = 0, posYmouse = 0;
 elmnt.addEventListener("mousedown", event => {
-    console.log("Down");
+    //console.log("Down");
     if (elmnt.style.left != "") {
         posX = parseInt(elmnt.style.left.slice(0, elmnt.style.left.length - 2));
     }
     if (elmnt.style.top != "") {
         posY = parseInt(elmnt.style.top.slice(0, elmnt.style.top.length - 2));
     }
-    console.log(posX)
+    //console.log(posX)
     posXmouse = window.event.clientX;
     posYmouse = window.event.clientY;
     elmnt.onmousemove = drag;
 });
 
 elmnt.addEventListener("mouseup", event => {
-    console.log("Up");
+    //console.log("Up");
     elmnt.onmousemove = nothing;
 });
 
@@ -126,7 +147,7 @@ function nothing() {
 }
 
 function drag() {
-    console.log("drag");
+    //console.log("drag");
     let e = window.event;
 
     e.preventDefault();
@@ -140,4 +161,5 @@ function drag() {
     elmnt.style.left = (posXNew) + "px";
 }
 elmnt.style.top = (-elmnt.clientHeight / 2.2) + "px";
-elmnt.style.left = ((window.screen.width / 2) - elmnt.clientWidth / 2) + "px";
+console.log(window.innerWidth)
+elmnt.style.left = ((window.innerWidth / 2) - elmnt.clientWidth / 2) + "px";
