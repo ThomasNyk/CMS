@@ -1,0 +1,33 @@
+.center {
+    text-align: center;
+}
+
+#leftScroll {
+    overflow: scroll;
+    border: 3px solid red;
+    height: 100px;
+}
+
+#rightMain {
+    background-color: darkslategray;
+}
+
+#grid {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1%;
+}
+
+#grid2 {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1%;
+}
+
+#grid2 div {
+    border: 3px solid red;
+}
