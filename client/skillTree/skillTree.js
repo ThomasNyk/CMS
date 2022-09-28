@@ -139,3 +139,5 @@ function drag() {
     elmnt.style.top = (posYNew) + "px";
     elmnt.style.left = (posXNew) + "px";
 }
+elmnt.style.top = (20) + "px";
+elmnt.style.left = ((window.screen.width / 3) - elmnt.style.width) + "px";

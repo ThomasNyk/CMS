@@ -1,11 +1,12 @@
 #skillTreeDiv {
     padding-top: 2%;
-    overflow-y: scroll;
+    overflow: hidden;
     text-align: center;
     width: 100vh;
     height: 100vh;
     position: absolute;
     z-index: -1;
+    left: 1000px;
 }
 
 .unselectable {
@@ -19,6 +20,7 @@
 
 
 body {
+    overflow: hidden;
     margin-top: 0;
     padding-top: 0;
 }
