@@ -1,4 +1,3 @@
-let mainUl = document.getElementById("tree");
 fetch("../../input.json")
     .then(response => response.json())
     .catch(err => { alert("No calls"); console.log(err) })
@@ -6,13 +5,6 @@ fetch("../../input.json")
         //abilities.sort((a, b) => {
         //    a.localeCompare(b);
         //})
-        let starters = determineStarters(jsonData.abilityMatrix);
-
-
-        for (let i = 0; i < starters.length; i++) {
-            //console.log("Doing a starter");
-            mainUl.appendChild(exploreMatrix(jsonData, starters[i], true));
-        }
         let nameText = jsonData.character.name;
         if (nameText[nameText.length - 1] == "s") {
             nameText += "' ablility sheet";
@@ -20,8 +12,36 @@ fetch("../../input.json")
             nameText += "'s ablility sheet";
         }
         document.getElementById("title").innerText = nameText;
-    });
 
+
+        let starters = determineStarters(jsonData.abilityMatrix);
+        let explored = [];
+
+        for (let i = 0; i < starters.length; i++) {
+            //console.log("Doing a starter");
+            //mainUl.appendChild(exploreMatrix(jsonData, starters[i], true));
+        }
+
+    });
+let pos = 0;
+document.getElementById("move").addEventListener("click", event => {
+    pos += 10;
+    console.log(pos)
+    elmnt.offsetHeight = (pos) + "px";
+    elmnt.offsetWidth = (pos) + "px";
+});
+
+let elmnt = document.getElementById("test");
+function move() {
+    pos += 10;
+    console.log("pos")
+    console.log(elmnt);
+    console.log(pos + "px");
+    elmnt.style.top = pos + "px";
+    elmnt.style.left = pos + "px";
+}
+
+/*
 //Explores the matrix for requirements, note: Does not detect loops
 function exploreMatrix(jsonData, elementNr, state) {
     state < 0 ? state = 0 : state
@@ -32,9 +52,6 @@ function exploreMatrix(jsonData, elementNr, state) {
 
     //console.log("Entering ExploreMatrix");
     let li = createTreeNode(elementNr, jsonData.abilities, state);
-
-
-
 
     //console.log(jsonData.abilities[elementNr].name);
     let found = false;
@@ -58,6 +75,9 @@ function exploreMatrix(jsonData, elementNr, state) {
     }
 }
 
+
+
+/*
 function createTreeNode(i, abilities, state) {
     let li = document.createElement("li");
     let span = document.createElement("span");
@@ -87,7 +107,7 @@ function createTreeNode(i, abilities, state) {
 
     li.appendChild(span);
     return li;
-}
+}*/
 
 Array.prototype.contains = function (target) {
     //console.log(this + " : " + target);
@@ -117,7 +137,7 @@ function determineStarters(matrix) {
     //console.log(starters);
     return starters;
 }
-
+/*
 var elmnt = document.getElementById("skillTreeDiv");
 let enableDrag = false;
 var posX = 0, posY = 0, posXmouse = 0, posYmouse = 0;
@@ -163,3 +183,4 @@ function drag() {
 elmnt.style.top = (-elmnt.clientHeight / 2.2) + "px";
 console.log(window.innerWidth)
 elmnt.style.left = ((window.innerWidth / 2) - elmnt.clientWidth / 2) + "px";
+*/

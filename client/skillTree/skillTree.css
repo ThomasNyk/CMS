@@ -4,8 +4,11 @@
     text-align: center;
     width: 200vh;
     height: 100vh;
+    position: relative;
+}
+
+#skillTreeDiv>* {
     position: absolute;
-    z-index: -1;
 }
 
 #tree {
