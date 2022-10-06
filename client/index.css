@@ -12,12 +12,13 @@
     background-color: darkslategray;
 }
 
-#grid {
+.grid {
     padding-left: 10%;
     padding-right: 10%;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1%;
+    padding: 0px;
 }
 
 #grid2 {
@@ -30,4 +31,30 @@
 
 #grid2 div {
     border: 3px solid red;
+}
+
+.gridOneOne {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1%;
+    padding: 0px;
+}
+
+body {
+    padding: 0vh 10vw;
+}
+
+.center {
+    text-align: center;
+}
+
+.normalDiv {
+    display: block;
+    padding-left: 10%;
+}
+
+.statList {
+    list-style: none;
 }

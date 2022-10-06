@@ -2,7 +2,7 @@
     padding-top: 2%;
     overflow: hidden;
     text-align: center;
-    width: 200vh;
+    width: 100vw;
     height: 100vh;
     position: relative;
 }
@@ -11,8 +11,10 @@
     position: absolute;
 }
 
-#tree {
-    top: 50%;
+body {
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .unselectable {
@@ -25,11 +27,6 @@
 }
 
 
-body {
-    overflow: hidden;
-    margin-top: 0;
-    padding-top: 0;
-}
 
 #hoverMenu {
     background-color: darkgray;
@@ -48,6 +45,7 @@ body {
     z-index: 1;
 }
 
+/*
 .tree,
 .tree ul,
 .tree li {
@@ -138,3 +136,4 @@ body {
 .tree>li>span:before {
     outline: none;
 }
+*/
