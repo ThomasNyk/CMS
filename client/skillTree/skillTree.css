@@ -4,12 +4,9 @@
     text-align: center;
     width: 100vw;
     height: 100vh;
-    position: relative;
 }
 
-#skillTreeDiv>* {
-    position: absolute;
-}
+#skillTreeDiv>* {}
 
 body {
     overflow: hidden;

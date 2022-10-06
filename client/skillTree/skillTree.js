@@ -11,6 +11,7 @@ fetch("../../input.json")
     .then(response => response.json())
     .catch(err => { alert("No calls"); console.log(err) })
     .then(jsonData => {
+
         //abilities.sort((a, b) => {
         //    a.localeCompare(b);
         //})
@@ -21,54 +22,108 @@ fetch("../../input.json")
             nameText += "'s ablility sheet";
         }
         document.getElementById("title").innerText = nameText;
-
-        longestBranchFirst = jsonData.abilityMatrix.sort((a, b) => {
+        let abilityMatrix = JSON.parse(JSON.stringify(jsonData.abilityMatrix));
+        longestBranchFirst = JSON.parse(JSON.stringify(jsonData.abilityMatrix.sort((a, b) => {
             let aLen = CountBranchSize(0, a, jsonData.abilityMatrix);
             let bLen = CountBranchSize(0, b, jsonData.abilityMatrix);
             //console.log(a, aLen, b, bLen);
             return bLen - aLen;
-        })
-        console.log(longestBranchFirst);
+        })));
+
         left = 0;
         right = 0;
+        let divCounter = 0;
+        for (let i = 0; i < longestBranchFirst.length; i++) {
+            longestBranchFirst[i].added = false;
+        }
 
         for (let i = 0; i < longestBranchFirst.length; i++) {
             if (longestBranchFirst[i].added != true) {
-                longestBranchFirst[i].added = true;
-                console.log(longestBranchFirst);
                 let level = 0;
-                addElement(jsonData.abilityMatrix, longestBranchFirst[i], i, level);
+                let branchDiv = document.createElement("div");
+                branchDiv.id = `branchDiv${divCounter}`;
+                divCounter++;
+                document.getElementById("skillTreeDiv").appendChild(branchDiv);
+                addElement(abilityMatrix, findNameInMatrix(abilityMatrix, longestBranchFirst[i][0]), level, branchDiv);
             }
         }
 
     });
 
-function addElement(abilityMatrix, element, elementNr) {
-    console.log("Start ", element[0])
-    createElement(element[0]);
-    for (let i = 1; i < element.length; i++) {
-        if (element[i]) {
-            console.log(abilityMatrix[i - 1])
-            //createElement(abilityMatrix[i - 1][0]);
-            addElement(abilityMatrix,)
+function addElement(abilityMatrix, elementNr, level, branchDiv) {
+    //console.log(abilityMatrix[elementNr][0], elementNr, findAndAdd(abilityMatrix[elementNr][0], false), "pre")
+    if (findAndAdd(abilityMatrix[elementNr][0], false) != true) {
+        findAndAdd(abilityMatrix[elementNr][0], true);
+        createElement(abilityMatrix[elementNr][0], level, branchDiv);
+        /*
+                console.log("Start", abilityMatrix[elementNr]);
+                for (let i = 0; i < abilityMatrix.length; i++) {
+                    if (abilityMatrix[i][elementNr - 2]) {
+                        console.log(abilityMatrix[i], elementNr - 2, abilityMatrix[i][elementNr - 2]);
+                        if (level > 5) {
+                            console.log("STOOOOP")
+                        } else {
+                            addElement(abilityMatrix, i, level - 1, branchDiv);
+                        }
+                    }
+                }
+        */
+        for (let i = 1; i < abilityMatrix[elementNr].length; i++) {
+            if (abilityMatrix[elementNr][i]) {
+                if (level > 5) {
+                    console.log("STOOOOP")
+                } else {
+
+                    addElement(abilityMatrix, i - 1, level + 1, branchDiv);
+                }
+            }
+        }
+    } else {
+        //console.log("Already added");
+    }
+
+}
+
+function createElement(name, level, branchDiv) {
+    let parentDiv = createLevelDiv(branchDiv, level);
+    let span = document.createElement("span");
+    //span.style.left = lastPosX + "px";
+    //span.style.top = lastPosy + "px";
+    //lastPosy -= offsetY - boxHeigt;
+    span.innerText = name;
+    findAndAdd(name, true);
+    parentDiv.appendChild(span);
+    //document.getElementById("skillTreeDiv").appendChild(span);
+}
+
+function createLevelDiv(branchDiv, level) {
+    let levelDiv = document.getElementById(`${branchDiv.id}Level${level}`);
+    if (levelDiv == null) {
+        levelDiv = document.createElement("div");
+        levelDiv.id = `${branchDiv.id}Level${level}`;
+        levelDiv.class = "grid";
+        branchDiv.appendChild(levelDiv);
+    }
+    return document.getElementById(`${branchDiv.id}Level${level}`);
+}
+
+function findAndAdd(name, add) {
+    for (let i = 0; i < longestBranchFirst.length; i++) {
+        if (longestBranchFirst[i][0] == name) {
+            if (add) {
+                longestBranchFirst[i].added = true;
+            } else {
+                return longestBranchFirst[i].added;
+            }
         }
     }
 }
 
-function createElement(name) {
-    let span = document.createElement("span");
-    span.style.left = lastPosX + "px";
-    span.style.top = lastPosy + "px";
-    lastPosy -= offsetY - boxHeigt;
-    span.innerText = name;
-    findAndAdd(name);
-    document.getElementById("skillTreeDiv").appendChild(span);
-}
-
-function findAndAdd(name) {
-    for (let i = 0; i < longestBranchFirst.length; i++) {
-        if (longestBranchFirst[i] == name) {
-            longestBranchFirst[i].added = true;
+function findNameInMatrix(matrix, name) {
+    for (let i = 0; i < matrix.length; i++) {
+        if (matrix[i][0] == name) {
+            //console.log("Found: ", name, i)
+            return i;
         }
     }
 }
@@ -76,7 +131,7 @@ function findAndAdd(name) {
 function CountBranchSize(count, element, abilityMatrix) {
     let childLengths = [];
     for (let i = 1; i < element.length; i++) {
-        if (element[i] == 1) {
+        if (element[i]) {
             //console.log(element, i - 1);
             //console.log(abilityMatrix[i - 1])
             childLengths.push(CountBranchSize(count, abilityMatrix[i - 1], abilityMatrix));
