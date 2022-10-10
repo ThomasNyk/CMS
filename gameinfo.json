@@ -1,14 +1,4 @@
 {
-    "character": {
-        "image": "https://upload.wikimedia.org/wikipedia/en/d/dc/Thomas_Tank_Engine_1.JPG",
-        "name": "Jeff",
-        "religion": "Thor",
-        "xp": 2,
-        "abilities": [
-            "HP+1",
-            "Firewall"
-        ]
-    },
     "abilities": [
         {
             "name": "HP+1",

@@ -13,10 +13,10 @@
 
 <body class="body">
     <h1 class="heading">Character Sheet</h1>
-    <input type="button" value="Back to Main Menu" id="backButton" class="backButton" />
+    <input type="button" value="Back to Main Menu" id="backButton" class="backButton" onclick="window.location='/';" />
     <div class="headgrid">
         <div>
-            <select id="characterSelecter">
+            <select id="characterSelector">
                 <option>Loading..</option>
             </select>
         </div>
@@ -30,7 +30,7 @@
             <img src="./missing.jpg" id="img" class="profilepic" style="max-height: 35vh; max-width: 35vh" />
 
             <div class="xpgrid">
-                <div class="xpgridOne">
+                <div class="xpgridOne" id="xpGrid">
                     <div class="center">
                         <output id="XPOne">XP1</output>
                     </div>
@@ -62,7 +62,6 @@
             <div id="valuta">
                 <h3>Valuta:</h3>
                 <div class="valuta" style="background-image: url(../cms/images/Green_hexagon.svg);">
-                    <img src="../cms/images/Green_hexagon.svg">
                     <h4 id="valutaValue">3</h4>
                 </div>
             </div>
@@ -72,11 +71,12 @@
             <div id="namegrid">
                 <div class="name">
                     <p>Character Name:</p>
-                    <input class="name" type="text" maxlength="100" pattern="[A-Za-z]" required />
-                    <input class="age" placeholder="Character Age" type="number" min="1" name="Age" />
+                    <input id="chrName" class="name" type="text" maxlength="100" pattern="[A-Za-z]" required />
+                    <input class="age" placeholder="Character Age" type="number" min="1" name="Age" id="chrAge" />
                     <p>Player Name:</p>
-                    <input class="name" type="text" maxlength="100" pattern="[A-Za-z]" required />
-                    <input class="age" placeholder="Player Age" type="number" min="1" max="150" name="Age" />
+                    <input id="playerName" class="name" type="text" maxlength="100" pattern="[A-Za-z]" required />
+                    <input id="playerAge" class="age" placeholder="Player Age" type="number" min="1" max="150"
+                        name="Age" />
                 </div>
             </div>
 

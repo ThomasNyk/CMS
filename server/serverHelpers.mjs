@@ -15,7 +15,8 @@ export function determineMimeType(fileName) {
         "css": "text/css",
         "ico": "image/vnd.microsoft.icon",
         "json": "application/json",
-        "png": "image/png"
+        "png": "image/png",
+        "svg": "image/svg+xml"
     }
     //returns the mimetype if it could be found in the typeTable
     //otherwise assume the type to be "text/plain"
@@ -114,4 +115,26 @@ export function getPostData(req) {
 export function getLastSplit(input, splitChar) {
     const temp = input.split(splitChar);
     return temp[temp.length - 1]
+}
+
+export function validateUserExistence(res, id) {
+    let userPath = "server/data/logins.json"
+    return new Promise((resolve, reject) => {
+        fs.readFile(userPath, (err, fileData) => {
+            if (err) {
+                reject("Could not read Login file: " + err);
+                //console.log("Could not read Login file: " + err);
+                //errorResponse(res, 500, "Could not read Login file: " + err);
+            } else {
+                fileData = JSON.parse(fileData);
+                for (let i = 0; i < fileData.users.length; i++) {
+                    if (fileData.users[i].id == id) {
+                        resolve(true);
+                    }
+                }
+                return resolve(false);
+            }
+        })
+    })
+
 }

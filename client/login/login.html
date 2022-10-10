@@ -2,13 +2,14 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./login.css">
+    <link href="./login.css" rel="stylesheet" />
+    <script src="./login.mjs" defer></script>
 </head>
 
 <body>
     <div class="mainDiv">
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
+        <input type="text" id="usernameBox" placeholder="Username">
+        <input type="password" id="passwordBox" placeholder="Password">
         <input type="button" id="loginBtn" value="Login">
         <output id="info"></output>
     </div>

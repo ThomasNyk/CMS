@@ -1,5 +1,7 @@
 import { determineMimeType, getArgs, getLastSplit } from "./serverHelpers.mjs";
+import { Login } from "./pages/login.mjs"
 import * as fs from 'fs';
+import { GetPlayerData } from "./pages/playerData.mjs";
 
 const operatorPath = "Server/ServerData/operators.json";
 
@@ -8,7 +10,12 @@ export function postHandler(req, res) {
     let d = new Date()
     let path = "Server/ServerData/CallerDB/callers" + "-" + d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate() + ".json";
     switch (req.url) {
-        case "":
+        case "login":
+            Login(req, res);
+            break;
+        case "client/cms/playerData":
+            GetPlayerData(req, res);
+            break;
         default:
             return errorResponse(res, 404, "Post request not found");
 

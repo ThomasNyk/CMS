@@ -1,4 +1,6 @@
 #mainDiv {
+    height: 100vh;
+    width: 100vw;
     position: flex;
     display: flex;
     justify-content: center;

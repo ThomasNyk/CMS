@@ -1,0 +1,48 @@
+{
+    "playerInfo": {
+        "name": "Toby",
+        "age": 2
+    },
+    "characters": [
+        {
+            "image": "https://upload.wikimedia.org/wikipedia/en/d/dc/Thomas_Tank_Engine_1.JPG",
+            "name": "Jeff",
+            "religion": "Thor",
+            "age": 53,
+            "xpArr": [
+                {
+                    "name": "battle XP",
+                    "value": 7
+                },
+                {
+                    "name": "Magic XP",
+                    "value": 2
+                }
+            ],
+            "abilities": [
+                "HP+1",
+                "Firewall"
+            ]
+        },
+        {
+            "image": "https://bbts1.azureedge.net/images/p/full/2022/03/adcb9a73-af23-4212-b3da-e000f5610071.jpg",
+            "name": "Stella",
+            "religion": "Thor",
+            "age": 23,
+            "xpArr": [
+                {
+                    "name": "battle XP",
+                    "value": 7
+                },
+                {
+                    "name": "Magic XP",
+                    "value": 2
+                }
+            ],
+            "abilities": [
+                "HP+1",
+                "Firewall"
+            ]
+        }
+    ]
+}
