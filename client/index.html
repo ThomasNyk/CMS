@@ -2,59 +2,12 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Character Builder</title>
-    <link href="../client/index.css" rel="stylesheet">
-    <script src="../client/index.js" defer></script>
+
 </head>
 
 <body>
-    <h1 class="center">Character Sheet</h1>
-    <input type="button" value="Back to Main menu" id="backButton">
-    <div class="grid">
-        <div>
-            <select id="characterSelecter">
-                <option>Loading..</option>
-            </select>
-        </div>
-        <div>
-            <input type="button" value="PDF/Print">
-        </div>
-    </div>
-    <div class="grid">
-        <div class="normalDiv">
-            <img src="./client/missing.jpg" id="img" style="max-height: 35vh; max-width: 35vh">
-            <div class="gridOneOne">
-                <div class="center">
-                    <output id="XPOne">XP1</output>
-                </div>
-                <div class="center">
-                    <output id="XPTwo">XP2</output>
-                </div>
-            </div>
-            <ul class="statList" id="statList">
-
-            </ul>
-        </div>
-        <div>
-            <div id="grid2">
-
-                <div style="height: 100%;">
-                    <input type="text" id="name" style="margin-top: 50%;">
-                </div>
-                <div>
-                    <label>Religion </label>
-                    <select id="religion">
-                        <option id="removableReligion">Select</option>
-                    </select>
-                </div>
-                <div>
-                    <p>asd</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button onClick="location.href = '../client/skillTree/skillTree.html';" ;>SkillTree(Broken)</button>
+    <input type="button" onclick="location.href = '../client/skillTree/skillTree.html';" value="SkillTree">
+    <input type="button" onclick="location.href = '../client/cms/cms.html';" value="CMS">
 </body>
 
 </html>

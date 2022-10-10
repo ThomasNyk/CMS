@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Character Builder</title>
+    <link href="./cms.css" rel="stylesheet" />
+    <script src="./cms.mjs" defer type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <h1 class="heading">Character Sheet</h1>
+    <input type="button" value="Back to Main Menu" id="backButton" class="backButton" />
+    <div class="headgrid">
+        <div>
+            <select id="characterSelecter">
+                <option>Loading..</option>
+            </select>
+        </div>
+        <div class="pdf">
+            <input type="button" value="PDF/Print" id="pdf" />
+        </div>
+    </div>
+
+    <div class="maingrid">
+        <div class="left">
+            <img src="./missing.jpg" id="img" class="profilepic" style="max-height: 35vh; max-width: 35vh" />
+
+            <div class="xpgrid">
+                <div class="xpgridOne">
+                    <div class="center">
+                        <output id="XPOne">XP1</output>
+                    </div>
+                    <div class="center">
+                        <output id="XPTwo">XP2</output>
+                    </div>
+                    <div class="center">
+                        <output id="XPTwo">XP3</output>
+                    </div>
+                    <div class="center">
+                        <output id="XPTwo">XP4</output>
+                    </div>
+                </div>
+            </div>
+
+            <div id="statgrid">
+                <div class="hp" style="overflow: hidden">
+                    <h2>HP:</h2>
+                    <output id="XP1" style="float: inline-end; margin-right: 1%;">asasdadasd</output>
+                </div>
+                <div class="mana">
+                    <h2>Mana:</h2>
+                </div>
+                <div class="stat3">
+                    <h2>Stat 3: </h2>
+                </div>
+            </div>
+
+            <div id="valuta">
+                <h3>Valuta:</h3>
+                <div class="valuta" style="background-image: url(../cms/images/Green_hexagon.svg);">
+                    <img src="../cms/images/Green_hexagon.svg">
+                    <h4 id="valutaValue">3</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div id="namegrid">
+                <div class="name">
+                    <p>Character Name:</p>
+                    <input class="name" type="text" maxlength="100" pattern="[A-Za-z]" required />
+                    <input class="age" placeholder="Character Age" type="number" min="1" name="Age" />
+                    <p>Player Name:</p>
+                    <input class="name" type="text" maxlength="100" pattern="[A-Za-z]" required />
+                    <input class="age" placeholder="Player Age" type="number" min="1" max="150" name="Age" />
+                </div>
+            </div>
+
+            <div id="charInfoDrop">
+                <select id="infoSelector">
+                    <option>Race:</option>
+                </select>
+                <select id="infoSelector">
+                    <option>New Profession:</option>
+                </select>
+                <select id="infoSelector">
+                    <option>New Special Ability:</option>
+                </select>
+                <select id="infoSelector">
+                    <option>New General Ability:</option>
+                </select>
+            </div>
+
+            <div id="abilitiesDiv">
+                <!--<h3>Abilities/Profession:</h3>
+                <textarea class="abilityBox" maxlength="3000" placeholder="Enter any other information:"></textarea>-->
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom">
+        <div class="story">
+            <h4>Background/Story: </h4>
+            <textarea class="backgroundBox" placeholder="Write your backstory:"></textarea>
+        </div>
+
+        <div class="notes">
+            <h4>Notes: </h4>
+            <textarea class="notesBox" placeholder="Enter any additional notes:"></textarea>
+        </div>
+    </div>
+    <!-- <button onClick="location.href = '../client/skillTree/skillTree.html';" ;>SkillTree(Broken)</button>-->
+</body>
+
+</html>
