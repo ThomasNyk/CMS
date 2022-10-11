@@ -48,11 +48,6 @@ function getCookie(target) {
     }
     return undefined;
 }
-/*
-for(let i = 0; i < characters.length; i++) {
-        
-}
-    */
 
 function populateFields(_playerData, selectedCharacterNr, gameInfo) {
 
@@ -207,9 +202,10 @@ function buildOListElement(obj, i) {
     div.addEventListener("mouseover", event => {
         overlaySelectedIndex = i;
         updateInfo(obj);
-    })
+    });
     let bgColor;
     let color;
+    console.log(selectedAbilities);
     if (tempValuta >= obj.cost && !selectedAbilities.contains(obj.name)) {
         bgColor = "#02cf0c";
         div.addEventListener("click", event => {
@@ -226,8 +222,7 @@ function buildOListElement(obj, i) {
         color = "#ffffff"
         div.addEventListener("click", event => {
             tempValuta += obj.cost;
-            selectedAbilities = selectedAbilities.splice(selectedAbilities.indexOf(obj.name), 1);
-            console.log(selectedAbilities);
+            if(selectedAbilities != undefined) selectedAbilities = removeItem(selectedAbilities, obj.name);
             buildDivList("oListDiv", checkRequirements(gameInfo.abilities, "abilityMatrix"), buildOListElement);
         });
     }
@@ -240,6 +235,16 @@ function buildOListElement(obj, i) {
 
     div.appendChild(output);
     return div;
+}
+
+function removeItem(arr, target) {
+    let newArrTest = [];
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] != target) {
+            newArrTest.push(arr[i]);
+        }
+    }
+    return newArrTest;
 }
 
 Array.prototype.contains = function (target) {
@@ -427,5 +432,4 @@ if (0) {
     }, 4))
     matrix[2][2] = 1;
 
-    //console.log(matrix);
 }
