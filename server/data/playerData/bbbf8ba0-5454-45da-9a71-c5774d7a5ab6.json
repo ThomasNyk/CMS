@@ -9,6 +9,9 @@
             "name": "Jeff",
             "religion": "Thor",
             "age": 53,
+            "race": "Elves",
+            "baseHP": 20,
+            "valuta": 3,
             "xpArr": [
                 {
                     "name": "battle XP",
@@ -21,14 +24,20 @@
             ],
             "abilities": [
                 "HP+1",
-                "Firewall"
-            ]
+                "Firewall",
+                "Fireball"
+            ],
+            "backstory": "OH not not backstory",
+            "notes": "Ew notes, that's for nerds"
         },
         {
             "image": "https://bbts1.azureedge.net/images/p/full/2022/03/adcb9a73-af23-4212-b3da-e000f5610071.jpg",
             "name": "Stella",
             "religion": "Thor",
             "age": 23,
+            "race": "OrcS",
+            "baseHP": 22,
+            "valuta": 20,
             "xpArr": [
                 {
                     "name": "battle XP",
@@ -42,7 +51,9 @@
             "abilities": [
                 "HP+1",
                 "Firewall"
-            ]
+            ],
+            "backstory": "OH not not MORE backstory",
+            "notes": "Ew notes"
         }
     ]
 }

@@ -2,23 +2,28 @@
     "abilities": [
         {
             "name": "HP+1",
-            "description": "More health"
+            "description": "More health",
+            "cost": 4
         },
         {
             "name": "HP+2",
-            "description": "Even more health you dummy"
+            "description": "Even more health you dummy",
+            "cost": 4
         },
         {
             "name": "Specialvåben Tohåndssværd",
-            "description": "Star wars reference"
+            "description": "Star wars reference",
+            "cost": 4
         },
         {
             "name": "Fireball",
-            "description": "The Drink"
+            "description": "The Drink",
+            "cost": 4
         },
         {
             "name": "Firewall",
-            "description": "Haha Computers"
+            "description": "Haha Computers",
+            "cost": 4
         }
     ],
     "abilityMatrix": [
@@ -71,6 +76,40 @@
         {
             "name": "Odin",
             "description": "The uber-asshole"
+        }
+    ],
+    "races": [
+        {
+            "name": "Elves",
+            "description": "Long ears, tall",
+            "playerRestrictions": "170cm or above"
+        },
+        {
+            "name": "Orcs",
+            "description": "Dumb, short",
+            "playerRestrictions": "180cm or less"
+        }
+    ],
+    "professions": [
+        {
+            "name": "Blacksmith",
+            "description": "More health"
+        },
+        {
+            "name": "Sorcerer",
+            "description": "Even more health you dummy"
+        },
+        {
+            "name": "Farmer",
+            "description": "Star wars reference"
+        },
+        {
+            "name": "Polititian",
+            "description": "The Drink"
+        },
+        {
+            "name": "Priest",
+            "description": "Haha Computers"
         }
     ]
 }
