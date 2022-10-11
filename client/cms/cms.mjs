@@ -210,7 +210,7 @@ function buildOListElement(obj, i) {
     })
     let bgColor;
     let color;
-    if (tempValuta >= obj.cost) {
+    if (tempValuta >= obj.cost && !selectedAbilities.contains(obj.name)) {
         bgColor = "#02cf0c";
         div.addEventListener("click", event => {
             tempValuta -= obj.cost;
