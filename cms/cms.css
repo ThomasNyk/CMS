@@ -12,8 +12,6 @@
     margin-bottom: 30px;
 }
 
-
-
 .backButton:hover {
     background-color: #52796f;
 }
@@ -27,19 +25,6 @@
     width: 100%;
     height: 5vh;
     resize: none;
-}
-
-#abilitiesDiv {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.abilities {
-    width: 50%;
-    margin: auto;
 }
 
 .backgroundBox {
@@ -85,7 +70,7 @@
 }
 
 .right {
-    width: auto;
+    width: 64%;
 }
 
 #bottom {
@@ -102,36 +87,20 @@
     margin-right: 10%;
 }
 
-.centeringDiv {
-    width: 100%;
-    margin: 0px;
-    text-align: center;
-}
-
 #namegrid {
     display: grid;
-    grid-template-columns: 100px 300px;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 1%;
     grid-row-gap: 10px;
-    width: 58%;
-    margin: auto;
-    text-align: center;
-    align-items: center;
 }
 
 #namegrid div {
     display: grid;
-    grid-template-columns: 100px 300px 100px;
+    grid-template-columns: 3fr 2fr 1fr;
     grid-gap: 10px;
-    width: auto;
 }
 
 .name {
-    font-size: 20px;
-    width: auto;
-}
-
-.charName {
     font-size: 20px;
 }
 
@@ -256,54 +225,31 @@ body {
     margin-bottom: 200px;
 }
 
-.hpbox {
+.hp {
     background-color: #9E2A2B;
     width: 50%;
     border-radius: 20px;
-    margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 20px;
     padding-left: 15px;
     box-shadow: 2px 2px black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.hp {
-    background: none;
-    border: none;
-    text-align: right;
-    font-size: 20px;
-    padding-right: 50px;
-}
-
-.button::-webkit-outer-spin-button,
-.button::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 .mana {
     background-color: #525174;
     width: 50%;
     border-radius: 20px;
-    margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 20px;
     padding-left: 15px;
     box-shadow: 2px 2px black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .stat3 {
     background-color: #cce3de;
     width: 50%;
     border-radius: 20px;
-    margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 20px;
     padding-left: 15px;
     box-shadow: 2px 2px black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 #charInfoDrop {

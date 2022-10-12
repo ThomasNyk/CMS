@@ -2,6 +2,7 @@ import { determineMimeType, getArgs, getLastSplit } from "./serverHelpers.mjs";
 import { Login } from "./pages/login.mjs"
 import * as fs from 'fs';
 import { GetPlayerData } from "./pages/playerData.mjs";
+import { changeRace, updateGeneralAbilities, changeValuta, updateXp, updateMana, updateHp } from "./pages/updateThings.mjs";
 
 const operatorPath = "Server/ServerData/operators.json";
 
@@ -15,6 +16,24 @@ export function postHandler(req, res) {
             break;
         case "client/cms/playerData":
             GetPlayerData(req, res);
+            break;
+        case "client/cms/abilityBought":
+            updateGeneralAbilities(req, res);
+            break;
+        case "client/cms/changeRace":
+            changeRace(req, res);
+            break;
+        case "client/cms/changeValuta":
+            changeValuta(req, res);
+            break;
+        case "client/cms/changeXp":
+            updateXp(req, res);
+            break;
+        case "client/cms/changeMana":
+            updateMana(req, res);
+            break;
+        case "client/cms/changeHp":
+            updateHp(req, res);
             break;
         default:
             return errorResponse(res, 404, "Post request not found");

@@ -55,7 +55,6 @@ function populateFields(_playerData, selectedCharacterNr, gameInfo) {
 
     let characters = _playerData.characters;
     let character = characters[selectedCharacterNr];
-    calculateStats(character);
 
     populateNameAndImg(character, _playerData);
 
@@ -72,7 +71,6 @@ function populateFields(_playerData, selectedCharacterNr, gameInfo) {
 
 
 
-
     /*let religionSelector = document.getElementById("religion");
     for (let i = 0; i < obj.religions.length; i++) {
         let option = document.createElement("option");
@@ -85,17 +83,6 @@ function populateFields(_playerData, selectedCharacterNr, gameInfo) {
         removeSelect();
     }
     */
-}
-
-function calculateStats(character) {
-    let abilities = character.abilities;
-    for (let i = 0; i < abilities.length; i++) {
-        let affectedStats = getObjectbyProperty(gameInfo.abilities, "name", abilities[i]).affectedStats;
-        console.log(affectedStats);
-        for (let p = 0; p < affectedStats.length; p++) {
-            character[affectedStats[p].name] += affectedStats[p].value;
-        }
-    }
 }
 
 function buildValutaElement(obj, i, gameInfoValutaObj) {
@@ -144,37 +131,27 @@ function addEventListeners() {
     document.getElementById("tint").addEventListener("click", hideOverlay);
     document.getElementById("oConfirm").addEventListener("click", pushNewAbiltiesToServer);
     document.getElementById("oReset").addEventListener("click", resetOverlay);
-    document.getElementById("setBaseHp").addEventListener("click", event => {
-        let validInput = false;
-        let answer;
-        while (!validInput) {
-            answer = prompt("Enter new base HP")
-            if (answer % 1 == 0 && answer <= 99 && answer > 0) {
-                validInput = true;
-            } else {
-                alert("Invalid Number");
+    document.getElementById("hp").addEventListener("change", event => {
+        let newHp = event.target.value
+        if (newHp == "") {
+            alert("Please enter a whole number");
+        } else {
+            let obj = {
+                "id": document.cookie.split("=")[1],
+                "characterName": playerData.characters[selectedCharacter].name,
+                "hp": newHp
             }
+            fetch("changeHp", {
+                method: "POST",
+                body: JSON.stringify(obj),
+            })
+                .then(response => response.json())
+                .catch(err => { alert("No response from server: ", err); })
+                .then(data => {
+                });
         }
-
-        let obj = {
-            "id": document.cookie.split("=")[1],
-            "characterName": playerData.characters[selectedCharacter].name,
-            "hp": answer
-        }
-        fetch("changeHp", {
-            method: "POST",
-            body: JSON.stringify(obj),
-        })
-            .then(response => response.json())
-            .catch(err => { alert("No response from server: ", err); })
-            .then(data => {
-                console.log("Update");
-                playerData.characters[selectedCharacter].hp = parseInt(answer);
-                calculateStats(playerData.characters[selectedCharacter]);
-                populateNameAndImg(playerData.characters[selectedCharacter], playerData);
-            });
     });
-    document.getElementById("mana").addEventListener("change", event => {
+    document.getElementById("hp").addEventListener("change", event => {
         let mana = event.target.value
         if (mana == "") {
             alert("Please enter a whole number");
@@ -191,8 +168,6 @@ function addEventListeners() {
                 .then(response => response.json())
                 .catch(err => { alert("No response from server: ", err); })
                 .then(data => {
-                    characters[selectedCharacter].mana = parseInt(mana);
-                    populateNameAndImg(characters[selectedCharacter], playerData);
                 });
         }
     });
@@ -740,8 +715,7 @@ function buildAbilityDivElement(obj, i) {
     div.style.marginBottom = "5px";
     div.style.backgroundColor = "#393939";
     div.style.borderRadius = "5px";
-    div.classList.add("abilities");
-    // div.style.width = "100%";
+    div.style.width = "100%";
     //div.style.
 
     let output = document.createElement("output");

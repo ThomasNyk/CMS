@@ -13,7 +13,6 @@ document.getElementById("loginBtn").addEventListener("click", (event) => {
         .then(response => response.json())
         .catch(err => alert("No response from server: ", err))
         .then(data => {
-            console.log(data);
             if (data.statusCode == 401) {
                 let output = document.getElementById('info');
                 output.value = "Incorrent credentials";

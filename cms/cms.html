@@ -75,17 +75,17 @@
             </div>
 
             <div id="statgrid">
-                <div class="hpbox" style="overflow: hidden">
-                    <h2>HP:</h2>
-                    <input id="hp" class="button hp" type="number"></input>
+                <div class="hp" style="overflow-x: scroll">
+                    <h2 style="width: min-content; float: left;">HP:</h2>
+                    <div style="float: right; height: 100px;">
+                        <output id="XP1" style="display: table-cell; vertical-align: middle;">asasdadasd</output>
+                    </div>
                 </div>
                 <div class="mana">
                     <h2>Mana:</h2>
-                    <input id="mana" class="button hp" type="number"></input>
                 </div>
                 <div class="stat3">
                     <h2>Stat 3: </h2>
-                    <input id="stat3" class="button hp" type="number"></input>
                 </div>
             </div>
 
@@ -100,34 +100,30 @@
         </div>
 
         <div class="right">
-            <div class="centeringDiv">
-                <div id="namegrid">
-                    <div class="name">
-                        <p>Character Name:</p>
-                        <input id="chrName" class="chrName" type="text" maxlength="100" pattern="[A-Za-z]" required />
-                        <input class="age" placeholder="Character Age" type="number" min="1" name="Age" id="chrAge" />
-                        <p>Player Name:</p>
-                        <input id="playerName" class="chrName" type="text" maxlength="100" pattern="[A-Za-z]"
-                            required />
-                        <input id="playerAge" class="age" placeholder="Player Age" type="number" min="1" max="150"
-                            name="Age" />
-                    </div>
+            <div id="namegrid">
+                <div class="name">
+                    <p>Character Name:</p>
+                    <input id="chrName" class="name" type="text" maxlength="100" pattern="[A-Za-z]" required />
+                    <input class="age" placeholder="Character Age" type="number" min="1" name="Age" id="chrAge" />
+                    <p>Player Name:</p>
+                    <input id="playerName" class="name" type="text" maxlength="100" pattern="[A-Za-z]" required />
+                    <input id="playerAge" class="age" placeholder="Player Age" type="number" min="1" max="150"
+                        name="Age" />
                 </div>
+            </div>
 
-                <div id="charInfoDrop">
-                    <select id="raceSelector" class="infoSelector">
-                        <option>Race:</option>
-                    </select>
-                    <button class="infoSelector" id="newProfession">New Profession</button>
-                    <button class="infoSelector" id="newGeneralAbility">New General Ability</button>
-                    <button class="infoSelector" id="newSpecialAbility">New Special Ability</button>
-                    <button class="infoSelector" id="setBaseHp">Set Base HP</button>
-                </div>
+            <div id="charInfoDrop">
+                <select id="raceSelector" class="infoSelector">
+                    <option>Race:</option>
+                </select>
+                <button class="infoSelector" id="newProfession">New Profession</button>
+                <button class="infoSelector" id="newGeneralAbility">New General Ability</button>
+                <button class="infoSelector" id="newSpecialAbility">New Special Ability</button>
+            </div>
 
-                <div id="abilitiesDiv">
-                    <!--<h3>Abilities/Profession:</h3>
-                    <textarea class="abilityBox" maxlength="3000" placeholder="Enter any other information:"></textarea>-->
-                </div>
+            <div id="abilitiesDiv">
+                <!--<h3>Abilities/Profession:</h3>
+                <textarea class="abilityBox" maxlength="3000" placeholder="Enter any other information:"></textarea>-->
             </div>
         </div>
     </div>
