@@ -94,7 +94,7 @@ export function updateMana(req, res) {
             //data = JSON.parse(data)
             let diskObj = importObject(partialPath + data.id + ".json");
             let character = getObjectbyProperty(diskObj.characters, "name", data.characterName);
-            character.Mana = parseInt(data.mana);
+            character.mana = parseInt(data.mana);
             exportObject(partialPath + data.id + ".json", diskObj, res);
             okResponse(res);
         });

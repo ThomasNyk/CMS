@@ -191,8 +191,8 @@ function addEventListeners() {
                 .then(response => response.json())
                 .catch(err => { alert("No response from server: ", err); })
                 .then(data => {
-                    characters[selectedCharacter].mana = parseInt(mana);
-                    populateNameAndImg(characters[selectedCharacter], playerData);
+                    playerData.characters[selectedCharacter].mana = parseInt(mana);
+                    populateNameAndImg(playerData.characters[selectedCharacter], playerData);
                 });
         }
     });
