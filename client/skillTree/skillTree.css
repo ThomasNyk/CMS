@@ -2,14 +2,23 @@
     padding-top: 2%;
     overflow: hidden;
     text-align: center;
-    width: 200vh;
+    width: 100vw;
     height: 100vh;
-    position: absolute;
-    z-index: -1;
 }
 
-#tree {
-    top: 50%;
+/*#skillTreeDiv>* {}*/
+
+body {
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#nodeElement {
+    width: 150px;
+    height: 100px;
+    margin: auto;
+    position: relative;
 }
 
 .unselectable {
@@ -22,11 +31,6 @@
 }
 
 
-body {
-    overflow: hidden;
-    margin-top: 0;
-    padding-top: 0;
-}
 
 #hoverMenu {
     background-color: darkgray;
@@ -42,9 +46,18 @@ body {
     text-align: center;
     margin: 0;
     padding-top: 1%;
-    z-index: 1;
+    z-index: 3;
 }
 
+#canvas {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+}
+
+
+/*
 .tree,
 .tree ul,
 .tree li {
@@ -135,3 +148,4 @@ body {
 .tree>li>span:before {
     outline: none;
 }
+*/

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Character Builder</title>
+    <link href="./cms.css" defer rel="stylesheet" />
+    <script src="./cms.mjs" defer type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div id="tint"></div>
+    <div id="overlay">
+        <div style="float: right;">
+            <input type="button" value="Reset" class="btn" id="oReset" style="background-color: red;">
+        </div>
+        <div style="float: right;">
+            <input type="button" value="Confirm" class="btn" id="oConfirm"
+                style="margin-right: 5px; background-color: green;">
+        </div>
+        <div style="width: 100%; display:block;">
+            <h1 id="oTitle"
+                style="color: white; position:relative; text-align: center; width: 80vw; display: block; border-radius: 5px;">
+                Loading
+            </h1>
+        </div>
+
+        <div id="oDivGrid">
+            <div id="oValutas" style="float: left;">
+            </div>
+            <div id="oListDiv" style="overflow: scroll; height: 60vh;">
+
+            </div>
+            <div>
+                <h2 id="oInfoTitle" style="text-align: center; color: white;">Select</h2>
+                <p id="oInfo" style="color: white;">INFO</p>
+            </div>
+        </div>
+    </div>
+    <h1 class="heading">Character Sheet</h1>
+    <input type="button" value="Back to Main Menu" id="backButton" class="backButton" onclick="window.location='/';" />
+    <div class="headgrid">
+        <div>
+            <select id="characterSelector">
+                <option>Loading..</option>
+            </select>
+        </div>
+        <div class="pdf">
+            <input type="button" value="PDF/Print" id="pdf" />
+        </div>
+    </div>
+
+    <div class="maingrid">
+        <div class="left">
+            <img src="./images/missing.jpg" id="img" class="profilepic" style="max-height: 35vh; max-width: 35vh" />
+
+            <div class="xpgrid">
+                <div class="xpgridOne" id="xpGrid">
+                    <div class="center">
+                        <output id="XPOne">XP1</output>
+                    </div>
+                    <div class="center">
+                        <output id="XPTwo">XP2</output>
+                    </div>
+                    <div class="center">
+                        <output id="XPTwo">XP3</output>
+                    </div>
+                    <div class="center">
+                        <output id="XPTwo">XP4</output>
+                    </div>
+                </div>
+            </div>
+
+            <div id="statgrid">
+                <div class="hpbox" style="overflow: hidden">
+                    <h2>HP:</h2>
+                    <input id="hp" class="button hp" type="number"></input>
+                </div>
+                <div class="mana">
+                    <h2>Mana:</h2>
+                    <input id="mana" class="button hp" type="number"></input>
+                </div>
+                <div class="stat3">
+                    <h2>Stat 3: </h2>
+                    <input id="stat3" class="button hp" type="number"></input>
+                </div>
+            </div>
+
+            <div id="valuta">
+                <div style="display:inline-block;">
+                    <h3>Valuta:</h3>
+                    <div class="valuta" style="background-image: url(../cms/images/Green_hexagon.svg);">
+                        <h4 class="valutaValue">3</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="centeringDiv">
+                <div id="namegrid">
+                    <div class="name">
+                        <p>Character Name:</p>
+                        <input id="chrName" class="chrName" type="text" maxlength="100" pattern="[A-Za-z]" required />
+                        <input class="age" placeholder="Character Age" type="number" min="1" name="Age" id="chrAge" />
+                        <p>Player Name:</p>
+                        <input id="playerName" class="chrName" type="text" maxlength="100" pattern="[A-Za-z]"
+                            required />
+                        <input id="playerAge" class="age" placeholder="Player Age" type="number" min="1" max="150"
+                            name="Age" />
+                    </div>
+                </div>
+
+                <div id="charInfoDrop">
+                    <select id="raceSelector" class="infoSelector">
+                        <option>Race:</option>
+                    </select>
+                    <button class="infoSelector" id="newProfession">New Profession</button>
+                    <button class="infoSelector" id="newGeneralAbility">New General Ability</button>
+                    <button class="infoSelector" id="newSpecialAbility">New Special Ability</button>
+                    <button class="infoSelector" id="setBaseHp">Set Base HP</button>
+                </div>
+
+                <div id="abilitiesDiv">
+                    <!--<h3>Abilities/Profession:</h3>
+                    <textarea class="abilityBox" maxlength="3000" placeholder="Enter any other information:"></textarea>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom">
+        <div class="story">
+            <h4>Background/Story: </h4>
+            <textarea class="backgroundBox" id="backstoryBox" placeholder="Write your backstory:"></textarea>
+        </div>
+
+        <div class="notes">
+            <h4>Notes: </h4>
+            <textarea class="notesBox" id="noteBox" placeholder="Enter any additional notes:"></textarea>
+        </div>
+    </div>
+    <!-- <button onClick="location.href = '../client/skillTree/skillTree.html';" ;>SkillTree(Broken)</button>-->
+</body>
+
+</html>

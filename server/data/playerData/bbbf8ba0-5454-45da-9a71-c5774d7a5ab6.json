@@ -1,0 +1,63 @@
+{
+    "playerInfo": {
+        "name": "Toby",
+        "age": 2
+    },
+    "characters": [
+        {
+            "image": "https://upload.wikimedia.org/wikipedia/en/d/dc/Thomas_Tank_Engine_1.JPG",
+            "name": "Jeff",
+            "religion": "Thor",
+            "age": 53,
+            "mana": 402,
+            "hp": 5,
+            "valutas": [
+                {
+                    "name": "dkk",
+                    "value": 69
+                },
+                {
+                    "name": "gbp",
+                    "value": 7
+                }
+            ],
+            "xpArr": [
+                {
+                    "name": "Battle XP",
+                    "value": 8
+                },
+                {
+                    "name": "Magic XP",
+                    "value": 52
+                }
+            ],
+            "abilities": [
+                "HP+1"
+            ],
+            "backstory": "OH not not backstory",
+            "notes": "Ew notes, that's for nerds",
+            "race": "Orcs"
+        },
+        {
+            "image": "https://bbts1.azureedge.net/images/p/full/2022/03/adcb9a73-af23-4212-b3da-e000f5610071.jpg",
+            "name": "Tobias",
+            "religion": "Thor",
+            "age": 23,
+            "race": "OrcS",
+            "baseHP": 22,
+            "valutas": [
+                {
+                    "name": "dkk",
+                    "value": 8
+                },
+                {
+                    "name": "gbp",
+                    "value": 5
+                }
+            ],
+            "abilities": [],
+            "backstory": "OH not not MORE backstory",
+            "notes": "Ew notes"
+        }
+    ]
+}

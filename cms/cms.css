@@ -1,0 +1,297 @@
+.body {
+    background-color: #cad2c5;
+}
+
+.backButton {
+    background-color: #84a98c;
+    font-family: 'Merienda';
+    font-size: 16px;
+    border-radius: 40px;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.backButton:hover {
+    background-color: #52796f;
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Merienda';
+}
+
+.abilityBox {
+    width: 100%;
+    height: 5vh;
+    resize: none;
+}
+
+.backgroundBox {
+    width: 100%;
+    height: 15vh;
+    resize: none;
+}
+
+.notesBox {
+    width: 100%;
+    height: 5vh;
+    resize: none;
+}
+
+#characterSelecter {
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px black;
+}
+
+.profilepic {
+    border-radius: 3 0px;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid black;
+}
+
+.headgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+
+.maingrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.right {
+    width: 64%;
+}
+
+#bottom {
+    width: 82%;
+}
+
+.xpgrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#namegrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1%;
+    grid-row-gap: 10px;
+}
+
+#namegrid div {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-gap: 10px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.age {
+    font-size: 20px;
+}
+
+.btn {
+    position: relative;
+    top: 30px;
+    right: 50px;
+    background-color: darkgray;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#oDivGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    column-gap: 1vw;
+    padding: 1vh 1vw;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(26, 26, 26);
+}
+
+#tint {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: black;
+    display: none;
+    opacity: 0.8;
+    z-index: 3;
+}
+
+#overlay {
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    left: 10vw;
+    top: 10vh;
+    background-color: rgb(59, 59, 59);
+    border-radius: 10px;
+    display: none;
+    z-index: 4;
+}
+
+#overlay>* {
+    z-index: 5;
+    border: #525174;
+}
+
+.infoSelector {
+    margin: 5px auto;
+    height: 30px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.xpgridOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.numberbutton::-webkit-outer-spin-button,
+.numberbutton::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.numberbutton {
+    width: 2vw;
+    font-size: x-large;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+}
+
+
+#pdf {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 3px;
+    border: 0.2px solid black;
+    background-color: #84a98c;
+}
+
+#pdf:hover {
+    background-color: #52796f;
+}
+
+body {
+    padding: 0vh 10vw;
+}
+
+.center {
+    text-align: center;
+}
+
+#statgrid {
+    margin-bottom: 200px;
+}
+
+.hp {
+    background-color: #9E2A2B;
+    width: 50%;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 15px;
+    box-shadow: 2px 2px black;
+}
+
+.mana {
+    background-color: #525174;
+    width: 50%;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 15px;
+    box-shadow: 2px 2px black;
+}
+
+.stat3 {
+    background-color: #cce3de;
+    width: 50%;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 15px;
+    box-shadow: 2px 2px black;
+}
+
+#charInfoDrop {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px 0px 10px 10px;
+}
+
+#infoSelector {
+    margin: 10px 0px 10px 10px;
+}
+
+
+#valuta {
+    text-align: left;
+    margin-left: 0px;
+    font-size: 20px;
+    width: 90%;
+    overflow-inline: scroll;
+    white-space: nowrap;
+    z-index: 7;
+}
+
+.valuta {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(30deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+
+.valutaValue {
+    text-align: center;
+    transform: rotate(-30deg);
+    background: none;
+    outline: none;
+    border: none;
+    width: 60px;
+    font-size: 35px;
+    user-select: none;
+}

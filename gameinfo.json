@@ -1,0 +1,182 @@
+{
+    "abilities": [
+        {
+            "name": "HP+1",
+            "description": "More health",
+            "valuta": "dkk",
+            "cost": 4,
+            "affectedStats": [
+                {
+                    "name": "hp",
+                    "value": 2
+                }
+            ],
+            "xpCosts": [
+                {
+                    "name": "Battle XP",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "name": "HP+2",
+            "description": "Even more health you dummy",
+            "valuta": "dkk",
+            "cost": 4,
+            "affectedStats": [
+                {
+                    "name": "hp",
+                    "value": 2
+                }
+            ],
+            "xpCosts": [
+                {
+                    "name": "Battle XP",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "name": "Specialvåben Tohåndssværd",
+            "description": "Star wars reference",
+            "valuta": "gbp",
+            "cost": 4,
+            "xpCosts": [
+                {
+                    "name": "Battle XP",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "name": "Fireball",
+            "description": "The Drink",
+            "valuta": "dkk",
+            "cost": 4,
+            "xpCosts": [
+                {
+                    "name": "Battle XP",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "name": "Firewall",
+            "description": "Haha Computers",
+            "valuta": "gbp",
+            "cost": 4,
+            "xpCosts": [
+                {
+                    "name": "Battle XP",
+                    "value": 2
+                }
+            ]
+        }
+    ],
+    "abilityMatrix": [
+        [
+            "HP+1",
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            "HP+2",
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Specialvåben Tohåndssværd",
+            1,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            "Fireball",
+            0,
+            1,
+            0,
+            0,
+            0
+        ],
+        [
+            "Firewall",
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    ],
+    "religions": [
+        {
+            "name": "Thor",
+            "description": "The asshole"
+        },
+        {
+            "name": "Odin",
+            "description": "The uber-asshole"
+        }
+    ],
+    "races": [
+        {
+            "name": "Elves",
+            "description": "Long ears, tall",
+            "playerRestrictions": "170cm or above"
+        },
+        {
+            "name": "Orcs",
+            "description": "Dumb, short",
+            "playerRestrictions": "180cm or less"
+        }
+    ],
+    "professions": [
+        {
+            "name": "Blacksmith",
+            "description": "More health"
+        },
+        {
+            "name": "Sorcerer",
+            "description": "Even more health you dummy"
+        },
+        {
+            "name": "Farmer",
+            "description": "Star wars reference"
+        },
+        {
+            "name": "Polititian",
+            "description": "The Drink"
+        },
+        {
+            "name": "Priest",
+            "description": "Haha Computers"
+        }
+    ],
+    "valutas": [
+        {
+            "name": "dkk",
+            "description": "Text"
+        },
+        {
+            "name": "gbp",
+            "description": "Text2"
+        }
+    ],
+    "XpTypes": [
+        {
+            "name": "Battle XP",
+            "description": "Text"
+        },
+        {
+            "name": "Magic XP",
+            "description": "Text2"
+        }
+    ]
+}
