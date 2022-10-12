@@ -9,7 +9,7 @@
             "name": "Jeff",
             "religion": "Thor",
             "age": 53,
-            "mana": 402,
+            "mana": 420,
             "hp": 5,
             "valutas": [
                 {
@@ -36,7 +36,8 @@
             ],
             "backstory": "OH not not backstory",
             "notes": "Ew notes, that's for nerds",
-            "race": "Orcs"
+            "race": "Orcs",
+            "Mana": 420
         },
         {
             "image": "https://bbts1.azureedge.net/images/p/full/2022/03/adcb9a73-af23-4212-b3da-e000f5610071.jpg",
