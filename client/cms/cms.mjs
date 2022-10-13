@@ -666,7 +666,7 @@ function buildXpElement(charArr, i, obj) {
     let output = document.createElement("output");
     output.innerText = charObj.name + ":"
     output.style.color = "#ffffff"
-    output.style.fontSize = "20px";
+    output.style.fontSize = "14px";
 
     let input = document.createElement("input");
     input.type = "number";
