@@ -447,13 +447,13 @@ function buildOListElement(obj, i) {
             if (selected) {
                 console.log("deselecting");
                 valuta.value += obj.cost;
-                updateLocalXp(tempXp, getObjectbyProperty(gameInfo.abilities, "name", obj.name).xpCosts, false);
+                updateLocalXp(tempXp, getObjectbyProperty(gameInfo.abilities, "name", obj.name).xpCosts, true);
                 if (selectedAbilities != undefined) selectedAbilities = removeItem(selectedAbilities, obj.name);
             } else {
                 console.log("selecting");
                 valuta.value -= obj.cost;
                 selectedAbilities.push(obj.name);
-                console.log(obj.name, getObjectbyProperty(gameInfo.abilities, "name", obj.name).xpCosts);
+                //console.log(obj.name, getObjectbyProperty(gameInfo.abilities, "name", obj.name).xpCosts);
                 updateLocalXp(tempXp, getObjectbyProperty(gameInfo.abilities, "name", obj.name).xpCosts, false);
             }
             buildDivList("oValutas", tempValutas, buildOverlayValutaElement, gameInfo.valutas);
@@ -494,10 +494,17 @@ function addMoreCosts(prices) {
 }
 
 function updateLocalXp(wallet, prices, add) {
+    console.log("updateXP");
     for (let p = 0; p < prices.length; p++) {
         let xp = getObjectbyProperty(wallet, "name", prices[p].name);
-        if (add) xp.value += prices[p].value;
-        else xp.value -= prices[p].value;
+        if (add) {
+            console.log("adding");
+            xp.value += prices[p].value;
+        }
+        else {
+            console.log("Subtracting");
+            xp.value -= prices[p].value;
+        }
     }
 }
 

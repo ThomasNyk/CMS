@@ -8,32 +8,38 @@
             "affectedStats": [
                 {
                     "name": "hp",
-                    "value": 2
+                    "value": 1
                 }
             ],
-            "xpCosts": [
-                {
-                    "name": "Battle XP",
-                    "value": 2
-                }
-            ]
+            "requirements": []
         },
         {
             "name": "HP+2",
             "description": "Even more health you dummy",
-            "valuta": "dkk",
-            "cost": 4,
+            "cost": [
+                {
+                    "name": "Battle XP",
+                    "value": 4
+                },
+                {
+                    "name": "dkk",
+                    "value": 35232
+                }
+            ],
             "affectedStats": [
                 {
                     "name": "hp",
                     "value": 2
                 }
             ],
-            "xpCosts": [
-                {
-                    "name": "Battle XP",
-                    "value": 2
-                }
+            "requirements": [
+                [
+                    "Firewall",
+                    "Fireball"
+                ],
+                [
+                    "Hp+1"
+                ]
             ]
         },
         {
@@ -41,11 +47,8 @@
             "description": "Star wars reference",
             "valuta": "gbp",
             "cost": 4,
-            "xpCosts": [
-                {
-                    "name": "Battle XP",
-                    "value": 2
-                }
+            "requirements": [
+                "HP+2"
             ]
         },
         {
@@ -53,11 +56,8 @@
             "description": "The Drink",
             "valuta": "dkk",
             "cost": 4,
-            "xpCosts": [
-                {
-                    "name": "Battle XP",
-                    "value": 2
-                }
+            "requirements": [
+                "HP+1"
             ]
         },
         {
@@ -65,11 +65,8 @@
             "description": "Haha Computers",
             "valuta": "gbp",
             "cost": 4,
-            "xpCosts": [
-                {
-                    "name": "Battle XP",
-                    "value": 2
-                }
+            "requirements": [
+                "Firewall"
             ]
         }
     ],
@@ -84,7 +81,10 @@
         ],
         [
             "HP+2",
-            1,
+            [
+                "HP+1",
+                "Fireball"
+            ],
             0,
             0,
             0,

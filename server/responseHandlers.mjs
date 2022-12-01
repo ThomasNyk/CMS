@@ -1,8 +1,8 @@
-import { determineMimeType, getArgs, getLastSplit } from "./serverHelpers.mjs";
+import { determineMimeType, getArgs } from "./serverHelpers.mjs";
 import { Login } from "./pages/login.mjs"
 import * as fs from 'fs';
 import { GetPlayerData } from "./pages/playerData.mjs";
-import { changeRace, updateGeneralAbilities, changeValuta, updateXp, updateMana, updateHp } from "./pages/updateThings.mjs";
+import { changeRace, updateGeneralAbilities, changeValuta, updateXp, updateMana, updateHp, changeCharacterTrait } from "./pages/updateThings.mjs";
 
 const operatorPath = "Server/ServerData/operators.json";
 
@@ -10,6 +10,7 @@ const operatorPath = "Server/ServerData/operators.json";
 export function postHandler(req, res) {
     let d = new Date()
     let path = "Server/ServerData/CallerDB/callers" + "-" + d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate() + ".json";
+    console.log(req.url);
     switch (req.url) {
         case "login":
             Login(req, res);
@@ -34,6 +35,9 @@ export function postHandler(req, res) {
             break;
         case "client/cms/changeHp":
             updateHp(req, res);
+            break;
+        case "client/cms/changeCharacterTrait":
+            changeCharacterTrait(req, res);
             break;
         default:
             return errorResponse(res, 404, "Post request not found");

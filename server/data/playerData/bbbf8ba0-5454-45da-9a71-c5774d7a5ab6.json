@@ -1,7 +1,8 @@
 {
     "playerInfo": {
         "name": "Toby",
-        "age": 2
+        "age": 2,
+        "id": "bbbf8ba0-5454-45da-9a71-c5774d7a5ab6"
     },
     "characters": [
         {
@@ -9,6 +10,16 @@
             "name": "Jeff",
             "religion": "Thor",
             "age": 53,
+            "stats": [
+                {
+                    "name": "hp",
+                    "value": 20
+                },
+                {
+                    "name": "Mana",
+                    "value": 420
+                }
+            ],
             "mana": 420,
             "hp": 5,
             "valutas": [
@@ -32,11 +43,12 @@
                 }
             ],
             "abilities": [
-                "HP+1"
+                "HP+1",
+                "HP+2"
             ],
             "backstory": "OH not not backstory",
             "notes": "Ew notes, that's for nerds",
-            "race": "Orcs",
+            "race": "Elves",
             "Mana": 420
         },
         {
@@ -46,6 +58,16 @@
             "age": 23,
             "race": "OrcS",
             "baseHP": 22,
+            "xpArr": [
+                {
+                    "name": "Battle XP",
+                    "value": 45
+                },
+                {
+                    "name": "Magic XP",
+                    "value": 12389
+                }
+            ],
             "valutas": [
                 {
                     "name": "dkk",
@@ -57,6 +79,43 @@
                 }
             ],
             "abilities": [],
+            "backstory": "OH not not MORE backstory",
+            "notes": "Ew notes"
+        },
+        {
+            "image": "https://bbts1.azureedge.net/images/p/full/2022/03/adcb9a73-af23-4212-b3da-e000f5610071.jpg",
+            "name": "ASDASDASDASDASD",
+            "religion": "Thor",
+            "age": 23,
+            "race": "Orcs",
+            "baseHP": 22,
+            "xpArr": [
+                {
+                    "name": "Battle XP",
+                    "value": 589
+                },
+                {
+                    "name": "Magic XP",
+                    "value": 572
+                },
+                {
+                    "name": "Farmer XP",
+                    "value": 5873
+                }
+            ],
+            "valutas": [
+                {
+                    "name": "dkk",
+                    "value": 8
+                },
+                {
+                    "name": "gbp",
+                    "value": 5
+                }
+            ],
+            "abilities": [
+                "fireball"
+            ],
             "backstory": "OH not not MORE backstory",
             "notes": "Ew notes"
         }

@@ -99,3 +99,22 @@ export function updateMana(req, res) {
             okResponse(res);
         });
 }
+
+export function changeCharacterTrait(req, res) {
+    getPostData(req)
+        .catch(err => errorResponse(res, 500, "Could not get PostData from client: " + err))
+        .then(data => {
+            console.log("data");
+            console.log(data);
+            //data = JSON.parse(data)
+            let diskObj = importObject(partialPath + data.id + ".json");
+            let character = getObjectbyProperty(diskObj.characters, "name", data.characterName);
+            if (character[data.trait] == null) {
+                errorResponse(res, 400, "Non-existent trait");
+            } else {
+                character[data.trait] = data.data;
+                exportObject(partialPath + data.id + ".json", diskObj, res);
+                okResponse(res);
+            }
+        });
+}
