@@ -1,43 +1,41 @@
 {
-  "SaveDestination": "C:\\Users\\ander\\Desktop\\CMSE project\\REAL CMSE project\\Project2\\bin\\Debug\\net6.0-windows\\Project2.dll",
+  "SaveDestination": "E:\\onM_Doc\\Programmering\\P3december\\Project2\\bin\\Debug\\net6.0-windows\\Project2.dll",
   "RacList": [
     {
       "Cost": 0,
       "CostTypes": [],
-      "Exclusions": [],
-      "Dependencies": [],
+      "Dependency": [],
       "FreeAbilities": [
-        "AbiList-/676379cf-aca1-4cb4-a4b4-8c3a60b46c23"
+        "AbiList-/5c8e2eb7-163d-4f52-b07a-1bf8469bcfd2"
       ],
       "Discounts": [],
       "AffectedResources": [
         {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
+          "UID": "ResList-/7dcb4988-c95a-4f8e-8d75-c0781b21c3f1",
           "Amount": 2
         },
         {
-          "UID": "ResList-/669e6426-0982-418f-8e9d-ad2ee903a85d",
+          "UID": "ResList-/0b56952e-48e2-439c-8972-505af562c915",
           "Amount": 3
         }
       ],
       "PlayerReq": "",
       "Name": "Elf",
       "Image": "",
-      "Description": "\u00E6\u00F8\u00E5",
-      "UID": "RacList-/9c08040b-54ef-49c8-8ef2-d5994e4c6ceb"
+      "Description": "the most pompius pricks of all races",
+      "UID": "RacList-/d21185af-355c-4a2e-9b35-b67ac8455166"
     },
     {
       "Cost": 0,
       "CostTypes": [],
-      "Exclusions": [],
-      "Dependencies": [],
+      "Dependency": [],
       "FreeAbilities": [
-        "AbiList-/6860a5b0-d323-4c1a-8d91-f330f157dd80"
+        "AbiList-/648a9aa0-bbf3-4d42-ae34-ccd65f196893"
       ],
       "Discounts": [],
       "AffectedResources": [
         {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
+          "UID": "ResList-/7dcb4988-c95a-4f8e-8d75-c0781b21c3f1",
           "Amount": 4
         }
       ],
@@ -45,29 +43,40 @@
       "Name": "Dwarf",
       "Image": "",
       "Description": "this be armor",
-      "UID": "RacList-/63ef8032-7131-4a0e-af56-7db37cd7f38d"
+      "UID": "RacList-/46518a39-ee85-485b-af78-ef1af9683af0"
     }
   ],
   "AbiList": [
     {
       "Cost": 5,
       "CostTypes": [
-        "ResList-/9fda2e31-2b20-42e9-927e-e3dccd977896"
+        "ResList-/da34fb72-83eb-4528-8a13-5979e111d78e"
       ],
-      "Exclusions": [],
-      "Dependencies": [
-        []
+      "Dependency": [
+        [
+          "CarList-/ae87a246-782f-492d-8dad-d7b10692ed68"
+        ],
+        [
+          "AbiList-/648a9aa0-bbf3-4d42-ae34-ccd65f196893",
+          "RacList-/46518a39-ee85-485b-af78-ef1af9683af0"
+        ],
+        [
+          "CarList-/ea8cd62f-20f5-4ac5-b3ed-f0149ceb93db"
+        ],
+        [
+          "RacList-/46518a39-ee85-485b-af78-ef1af9683af0"
+        ]
       ],
       "FreeAbilities": [],
       "Discounts": [
         {
-          "UID": "CarList-/b35cce7e-14bf-4679-9b03-0fdf30f2a379",
+          "UID": "CarList-/ae87a246-782f-492d-8dad-d7b10692ed68",
           "Amount": 3
         }
       ],
       "AffectedResources": [
         {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
+          "UID": "ResList-/7dcb4988-c95a-4f8e-8d75-c0781b21c3f1",
           "Amount": 2
         }
       ],
@@ -75,29 +84,28 @@
       "Name": "SMITE",
       "Image": "",
       "Description": "slaa gud modstander med hellig styrke",
-      "UID": "AbiList-/6860a5b0-d323-4c1a-8d91-f330f157dd80"
+      "UID": "AbiList-/648a9aa0-bbf3-4d42-ae34-ccd65f196893"
     },
     {
-      "Cost": 10,
+      "Cost": 4,
       "CostTypes": [
-        "ResList-/9fda2e31-2b20-42e9-927e-e3dccd977896"
+        "ResList-/da34fb72-83eb-4528-8a13-5979e111d78e"
       ],
-      "Exclusions": [],
-      "Dependencies": [
+      "Dependency": [
         [
-          "AbiList-/6860a5b0-d323-4c1a-8d91-f330f157dd80"
+          "CarList-/ea8cd62f-20f5-4ac5-b3ed-f0149ceb93db"
         ]
       ],
       "FreeAbilities": [],
       "Discounts": [
         {
-          "UID": "CarList-/1db8ddb3-8de3-4ff1-9630-7cf7a0f127b5",
+          "UID": "CarList-/ea8cd62f-20f5-4ac5-b3ed-f0149ceb93db",
           "Amount": 2
         }
       ],
       "AffectedResources": [
         {
-          "UID": "ResList-/669e6426-0982-418f-8e9d-ad2ee903a85d",
+          "UID": "ResList-/0b56952e-48e2-439c-8972-505af562c915",
           "Amount": 2
         }
       ],
@@ -105,20 +113,19 @@
       "Name": "Eldrich BLAST",
       "Image": "",
       "Description": "it\u0027s a BLAST to use",
-      "UID": "AbiList-/676379cf-aca1-4cb4-a4b4-8c3a60b46c23"
+      "UID": "AbiList-/5c8e2eb7-163d-4f52-b07a-1bf8469bcfd2"
     }
   ],
   "CarList": [
     {
       "Cost": 0,
       "CostTypes": [],
-      "Exclusions": [],
-      "Dependencies": [],
+      "Dependency": [],
       "FreeAbilities": [],
       "Discounts": [],
       "AffectedResources": [
         {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
+          "UID": "ResList-/7dcb4988-c95a-4f8e-8d75-c0781b21c3f1",
           "Amount": 2
         }
       ],
@@ -126,22 +133,21 @@
       "Name": "Warrior",
       "Image": "",
       "Description": "am gonna swing a sword",
-      "UID": "CarList-/b35cce7e-14bf-4679-9b03-0fdf30f2a379"
+      "UID": "CarList-/ae87a246-782f-492d-8dad-d7b10692ed68"
     },
     {
       "Cost": 0,
       "CostTypes": [],
-      "Exclusions": [],
-      "Dependencies": [
+      "Dependency": [
         [
-          "CarList-/b35cce7e-14bf-4679-9b03-0fdf30f2a379"
+          "CarList-/ae87a246-782f-492d-8dad-d7b10692ed68"
         ]
       ],
       "FreeAbilities": [],
       "Discounts": [],
       "AffectedResources": [
         {
-          "UID": "ResList-/669e6426-0982-418f-8e9d-ad2ee903a85d",
+          "UID": "ResList-/0b56952e-48e2-439c-8972-505af562c915",
           "Amount": 2
         }
       ],
@@ -149,20 +155,19 @@
       "Name": "Warlock",
       "Image": "",
       "Description": "-_-",
-      "UID": "CarList-/1db8ddb3-8de3-4ff1-9630-7cf7a0f127b5"
+      "UID": "CarList-/ea8cd62f-20f5-4ac5-b3ed-f0149ceb93db"
     }
   ],
   "RelList": [
     {
       "Cost": 0,
       "CostTypes": [],
-      "Exclusions": [],
-      "Dependencies": [],
+      "Dependency": [],
       "FreeAbilities": [],
       "Discounts": [],
       "AffectedResources": [
         {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
+          "UID": "ResList-/7dcb4988-c95a-4f8e-8d75-c0781b21c3f1",
           "Amount": 2
         }
       ],
@@ -170,34 +175,14 @@
       "Name": "Cult Of Sigmar",
       "Image": "",
       "Description": "The Cult of Sigmar, also sometimes called the Church of Sigmar, the Holy Temple of Sigmar, the Clergy of Sigmar or simply the Sigmarite Cult, is the state church of the Empire that administrates the worship of that realm\u0027s patron god, Sigmar Heldenhammer.",
-      "UID": "RelList-/625f9c7e-b10e-48c4-9f2c-077906d46302"
-    },
-    {
-      "Cost": 0,
-      "CostTypes": [],
-      "Exclusions": [],
-      "Dependencies": [],
-      "FreeAbilities": [],
-      "Discounts": [],
-      "AffectedResources": [
-        {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
-          "Amount": 2
-        }
-      ],
-      "PlayerReq": "",
-      "Name": "Cult Of Winton",
-      "Image": "",
-      "Description": "The Cult of Winton, also sometimes called the Church of Science, the Holy Temple of the Moon, the Clergy of Winton or simply the Science Cult, is the state church of the Empire that administrates the worship of the Moon\u0027s god, Winton  Angy.",
-      "UID": "RelList-/525f9c7e-b10e-48c4-9f2c-077906d46302"
+      "UID": "RelList-/3a3a60ed-492d-4680-aa6e-a9e170a66119"
     }
   ],
   "IteList": [
     {
       "Cost": 0,
       "CostTypes": [],
-      "Exclusions": [],
-      "Dependencies": [],
+      "Dependency": [],
       "FreeAbilities": [],
       "Discounts": [],
       "AffectedResources": [],
@@ -205,7 +190,7 @@
       "Name": "hammer",
       "Image": "",
       "Description": "Le-Bonk",
-      "UID": "IteList-/86bf6c86-cdae-4905-b0e2-45ac675555dd"
+      "UID": "IteList-/343a03ce-6077-4e00-b589-ff22d8b4f450"
     }
   ],
   "ResList": [
@@ -214,28 +199,21 @@
       "Name": "health",
       "Image": "",
       "Description": "ye dead if this be zero",
-      "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd"
+      "UID": "ResList-/7dcb4988-c95a-4f8e-8d75-c0781b21c3f1"
     },
     {
       "Type": 0,
       "Name": "Mana",
       "Image": "",
       "Description": "le-Magic juice",
-      "UID": "ResList-/669e6426-0982-418f-8e9d-ad2ee903a85d"
+      "UID": "ResList-/0b56952e-48e2-439c-8972-505af562c915"
     },
     {
       "Type": 1,
       "Name": "xp",
       "Image": "",
       "Description": "GAINS!!",
-      "UID": "ResList-/9fda2e31-2b20-42e9-927e-e3dccd977896"
-    },
-    {
-      "Type": 2,
-      "Name": "DKK",
-      "Image": "",
-      "Description": "GAINS!!",
-      "UID": "ResList-/8fda2e31-2b20-42e9-927e-e3dccd977896"
+      "UID": "ResList-/da34fb72-83eb-4528-8a13-5979e111d78e"
     }
   ],
   "IcoList": [],

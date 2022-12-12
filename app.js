@@ -4,7 +4,7 @@ import * as http from 'http';
 import * as fs from 'fs';
 
 let hostname;
-online ? hostname = '192.168.1.72' : hostname = '192.168.0.139';
+hostname = online ? '192.168.59.179' : '192.168.0.139';
 const port = 8000;
 
 import { postHandler, getHandler, fileResponse, errorResponse } from './server/responseHandlers.mjs';

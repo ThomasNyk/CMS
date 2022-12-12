@@ -145,3 +145,10 @@ Array.prototype.contains = function (target) {
     }
     return false;
 };
+
+Array.prototype.containsAttribute = function (target, attribute) {
+    for (let i = 0; i < this.length; i++) {
+        if (this[i][attribute] == target) return true;
+    }
+    return false;
+};

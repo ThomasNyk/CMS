@@ -1,8 +1,8 @@
 import { determineMimeType, getArgs } from "./serverHelpers.mjs";
 import { Login } from "./pages/login.mjs"
 import * as fs from 'fs';
-import { GetPlayerData } from "./pages/playerData.mjs";
-import { changeRace, updateGeneralAbilities, changeValuta, updateXp, updateMana, updateHp, changeCharacterTrait } from "./pages/updateThings.mjs";
+import { compileAdminPlayerList, getCharacter, GetPlayerData } from "./pages/playerData.mjs";
+import { changeRace, updateGeneralAbilities, changeValuta, updateXp, updateMana, updateHp, changeCharacterTrait, newCharacter, newPlayer, buy } from "./pages/updateThings.mjs";
 
 const operatorPath = "Server/ServerData/operators.json";
 
@@ -17,6 +17,9 @@ export function postHandler(req, res) {
             break;
         case "client/cms/playerData":
             GetPlayerData(req, res);
+            break;
+        case "getCharacter":
+            getCharacter(req, res);
             break;
         case "client/cms/abilityBought":
             updateGeneralAbilities(req, res);
@@ -38,6 +41,18 @@ export function postHandler(req, res) {
             break;
         case "client/cms/changeCharacterTrait":
             changeCharacterTrait(req, res);
+            break;
+        case "newCharacter":
+            newCharacter(req, res);
+            break;
+        case "newPlayer":
+            newPlayer(req, res)
+            break;
+        case "buy":
+            buy(req, res);
+            break;
+        case "adminPlayerList":
+            compileAdminPlayerList(req, res);
             break;
         default:
             return errorResponse(res, 404, "Post request not found");
