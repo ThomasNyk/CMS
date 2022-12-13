@@ -56,9 +56,7 @@
       ],
       "Exclusions": [],
       "Dependencies": [
-        [
-          "CarList-/b35cce7e-14bf-4679-9b03-0fdf30f2a379"
-        ]
+        []
       ],
       "FreeAbilities": [],
       "Discounts": [
@@ -80,14 +78,14 @@
       "UID": "AbiList-/6860a5b0-d323-4c1a-8d91-f330f157dd80"
     },
     {
-      "Cost": 4,
+      "Cost": 10,
       "CostTypes": [
         "ResList-/9fda2e31-2b20-42e9-927e-e3dccd977896"
       ],
       "Exclusions": [],
       "Dependencies": [
         [
-          "CarList-/1db8ddb3-8de3-4ff1-9630-7cf7a0f127b5"
+          "AbiList-/6860a5b0-d323-4c1a-8d91-f330f157dd80"
         ]
       ],
       "FreeAbilities": [],
@@ -173,6 +171,25 @@
       "Image": "",
       "Description": "The Cult of Sigmar, also sometimes called the Church of Sigmar, the Holy Temple of Sigmar, the Clergy of Sigmar or simply the Sigmarite Cult, is the state church of the Empire that administrates the worship of that realm\u0027s patron god, Sigmar Heldenhammer.",
       "UID": "RelList-/625f9c7e-b10e-48c4-9f2c-077906d46302"
+    },
+    {
+      "Cost": 0,
+      "CostTypes": [],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
+          "Amount": 2
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "Cult Of Winton",
+      "Image": "",
+      "Description": "The Cult of Winton, also sometimes called the Church of Science, the Holy Temple of the Moon, the Clergy of Winton or simply the Science Cult, is the state church of the Empire that administrates the worship of the Moon\u0027s god, Winton  Angy.",
+      "UID": "RelList-/525f9c7e-b10e-48c4-9f2c-077906d46302"
     }
   ],
   "IteList": [
@@ -212,6 +229,13 @@
       "Image": "",
       "Description": "GAINS!!",
       "UID": "ResList-/9fda2e31-2b20-42e9-927e-e3dccd977896"
+    },
+    {
+      "Type": 2,
+      "Name": "DKK",
+      "Image": "",
+      "Description": "GAINS!!",
+      "UID": "ResList-/8fda2e31-2b20-42e9-927e-e3dccd977896"
     }
   ],
   "IcoList": [],

@@ -2,6 +2,7 @@
     "type": "module",
     "dependencies": {
         "git": "^0.1.5",
+        "nanoid": "^4.0.0",
         "uuidv4": "^6.2.13"
     }
 }

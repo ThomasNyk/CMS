@@ -1,155 +1,1538 @@
 {
-  "SaveDestination": "C:\\Users\\ander\\Desktop\\CMSE project\\REAL CMSE project\\Project2\\bin\\Debug\\net6.0-windows\\Project2.dll",
+  "SaveDestination": "E:\\onM_Doc\\Programmering\\config destination\\",
   "RacList": [
     {
       "Cost": 0,
       "CostTypes": [],
       "Exclusions": [],
       "Dependencies": [],
-      "FreeAbilities": [
-        "AbiList-/676379cf-aca1-4cb4-a4b4-8c3a60b46c23"
-      ],
+      "FreeAbilities": [],
       "Discounts": [],
       "AffectedResources": [
         {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
+          "UID": "ResList-/88af24ee-f80c-4dba-a5c5-6fe43f949fb9",
           "Amount": 2
         },
         {
-          "UID": "ResList-/669e6426-0982-418f-8e9d-ad2ee903a85d",
-          "Amount": 3
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
         }
       ],
       "PlayerReq": "",
-      "Name": "Elf",
+      "Name": "Menneske",
       "Image": "",
-      "Description": "\u00E6\u00F8\u00E5",
-      "UID": "RacList-/9c08040b-54ef-49c8-8ef2-d5994e4c6ceb"
+      "Description": "",
+      "UID": "RacList-/d089ace2-31b6-4068-a62e-833ba6620002"
     },
     {
       "Cost": 0,
       "CostTypes": [],
       "Exclusions": [],
       "Dependencies": [],
-      "FreeAbilities": [
-        "AbiList-/6860a5b0-d323-4c1a-8d91-f330f157dd80"
-      ],
+      "FreeAbilities": [],
       "Discounts": [],
       "AffectedResources": [
         {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
-          "Amount": 4
+          "UID": "ResList-/88af24ee-f80c-4dba-a5c5-6fe43f949fb9",
+          "Amount": 2
+        },
+        {
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
         }
       ],
       "PlayerReq": "",
-      "Name": "Dwarf",
+      "Name": "H\u00F8jelver",
       "Image": "",
       "Description": "this be armor",
-      "UID": "RacList-/63ef8032-7131-4a0e-af56-7db37cd7f38d"
+      "UID": "RacList-/b3c5c6f2-2f4c-4c3d-bd4e-569641d78210"
+    },
+    {
+      "Cost": 0,
+      "CostTypes": [],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/88af24ee-f80c-4dba-a5c5-6fe43f949fb9",
+          "Amount": 2
+        },
+        {
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "Skovelver",
+      "Image": "",
+      "Description": "",
+      "UID": "RacList-/956ae6ad-5768-4efd-8e47-6f6e4a4b60ff"
+    },
+    {
+      "Cost": 0,
+      "CostTypes": [],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/88af24ee-f80c-4dba-a5c5-6fe43f949fb9",
+          "Amount": 2
+        },
+        {
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "Dv\u00E6rg",
+      "Image": "",
+      "Description": "",
+      "UID": "RacList-/95727bf2-062d-4613-9b5c-09242d90b3bf"
+    },
+    {
+      "Cost": 0,
+      "CostTypes": [],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/88af24ee-f80c-4dba-a5c5-6fe43f949fb9",
+          "Amount": 2
+        },
+        {
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "Halvlang",
+      "Image": "",
+      "Description": "",
+      "UID": "RacList-/837c35ab-f44c-461e-a45f-7f8ed56aa530"
     }
   ],
   "AbiList": [
     {
-      "Cost": 5,
+      "Cost": 4,
       "CostTypes": [
-        "ResList-/9fda2e31-2b20-42e9-927e-e3dccd977896"
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a",
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90",
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809"
       ],
       "Exclusions": [],
-      "Dependencies": [
-        []
-      ],
+      "Dependencies": [],
       "FreeAbilities": [],
       "Discounts": [
         {
-          "UID": "CarList-/b35cce7e-14bf-4679-9b03-0fdf30f2a379",
-          "Amount": 3
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
         }
       ],
       "AffectedResources": [
         {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
-          "Amount": 2
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
         }
       ],
       "PlayerReq": "",
-      "Name": "SMITE",
+      "Name": "N\u00E6vekamp 2",
       "Image": "",
-      "Description": "slaa gud modstander med hellig styrke",
-      "UID": "AbiList-/6860a5b0-d323-4c1a-8d91-f330f157dd80"
+      "Description": "Du er lidt bedre til at k\u00E6mpe ubev\u00E6bnet end en utr\u00E6net person, og har 2 i n\u00E6vekamp.",
+      "UID": "AbiList-/c2ba05ce-e0a7-4d74-90d7-a18de09f8f86"
     },
     {
-      "Cost": 10,
+      "Cost": 4,
       "CostTypes": [
-        "ResList-/9fda2e31-2b20-42e9-927e-e3dccd977896"
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a",
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90",
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809"
       ],
       "Exclusions": [],
       "Dependencies": [
         [
-          "AbiList-/6860a5b0-d323-4c1a-8d91-f330f157dd80"
+          "AbiList-/c2ba05ce-e0a7-4d74-90d7-a18de09f8f86"
         ]
       ],
       "FreeAbilities": [],
       "Discounts": [
         {
-          "UID": "CarList-/1db8ddb3-8de3-4ff1-9630-7cf7a0f127b5",
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
           "Amount": 2
         }
       ],
       "AffectedResources": [
         {
-          "UID": "ResList-/669e6426-0982-418f-8e9d-ad2ee903a85d",
-          "Amount": 2
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
         }
       ],
       "PlayerReq": "",
-      "Name": "Eldrich BLAST",
+      "Name": "N\u00E6vekamp 3",
       "Image": "",
-      "Description": "it\u0027s a BLAST to use",
-      "UID": "AbiList-/676379cf-aca1-4cb4-a4b4-8c3a60b46c23"
+      "Description": "Du har tr\u00E6ner dine evner til at sl\u00E5s ubev\u00E6bnet og kan holde 2 utr\u00E6nede personer hen. Du har 3 i n\u00E6vekamp.",
+      "UID": "AbiList-/521e476b-27e5-4503-8d20-555cbf28a4b0"
+    },
+    {
+      "Cost": 4,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a",
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90",
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/521e476b-27e5-4503-8d20-555cbf28a4b0"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "N\u00E6vekamp 4",
+      "Image": "",
+      "Description": ": Du har efterh\u00E5nden opn\u00E5et s\u00E5 god forst\u00E5else for at sl\u00E5s, at du kan overkomme 2 utr\u00E6nede modstandere uden st\u00F8rre problemer. Du har 4 i n\u00E6vekamp.",
+      "UID": "AbiList-/9b9d6b01-0c13-4f8c-a55e-1b1f04897ea7"
+    },
+    {
+      "Cost": 4,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a",
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90",
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/9b9d6b01-0c13-4f8c-a55e-1b1f04897ea7"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "N\u00E6vekamp 5",
+      "Image": "",
+      "Description": "Din viden om hvordan du forsvarer dig og angriber n\u00E5r du er ubev\u00E6bnet er s\u00E5 stor, at du kan holde en lille flok personer hen. Du har 5 i n\u00E6vekamp.",
+      "UID": "AbiList-/e6f0d6c0-7821-4a80-9517-af1829f6d569"
+    },
+    {
+      "Cost": 4,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/e6f0d6c0-7821-4a80-9517-af1829f6d569"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "N\u00E6vekamp 6",
+      "Image": "",
+      "Description": "Du har efterh\u00E5nden opn\u00E5et en ekspertise indenfor at k\u00E6mpe ubev\u00E6bnet og selv den mest h\u00E6rdede veteran skal have et par venner med for at v\u00E6re sikker p\u00E5 at kunne l\u00E6gge dig ned uden v\u00E5ben. Du har 6 i n\u00E6vekamp.",
+      "UID": "AbiList-/be08cb22-fa5a-4f2b-bc61-efc6818aa382"
+    },
+    {
+      "Cost": 4,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/be08cb22-fa5a-4f2b-bc61-efc6818aa382"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "N\u00E6vekamp 7",
+      "Image": "",
+      "Description": "F\u00E5 er de folk, som t\u00F8r angribe dig uden et v\u00E5ben i h\u00E5nden, og de f\u00E6rreste af dine fjender har et fuldt s\u00E6t t\u00E6nder. Du har 7 i n\u00E6vekamp.",
+      "UID": "AbiList-/4b32a300-8d8a-493c-bad8-4e09f0c9713e"
+    },
+    {
+      "Cost": 4,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/4b32a300-8d8a-493c-bad8-4e09f0c9713e"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "N\u00E6vekamp 8",
+      "Image": "",
+      "Description": "Der g\u00E5r rygter om hvordan du har nedlagt en trold med de bare n\u00E6ver i en brandert. Rygterne er forkerte \u2013 du havde t\u00F8mmerm\u00E6nd den dag. Du har 8 i n\u00E6vekamp",
+      "UID": "AbiList-/809f5dca-4c50-4893-a98d-f47409456c18"
+    },
+    {
+      "Cost": 4,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/809f5dca-4c50-4893-a98d-f47409456c18"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "N\u00E6vekamp 9",
+      "Image": "",
+      "Description": "Byvagten har en gang bedt dig om at se din v\u00E5bentilladelse for de n\u00E6ver du g\u00E5r rundt med. Derefter holdt de op med at sp\u00F8rge. Du har 9 i n\u00E6vekamp.",
+      "UID": "AbiList-/524069df-c660-40c4-868c-949db88ee4d0"
+    },
+    {
+      "Cost": 4,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/524069df-c660-40c4-868c-949db88ee4d0"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "N\u00E6vekamp 10",
+      "Image": "",
+      "Description": ": Hvis du skal blive dygtigere, skal rejsen g\u00E5 til Cathay. Du har 10 i n\u00E6vekamp.",
+      "UID": "AbiList-/b0863c30-3fe7-44c0-972b-dba6195fb38e"
+    },
+    {
+      "Cost": 5,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90",
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/88af24ee-f80c-4dba-a5c5-6fe43f949fb9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "3 HP",
+      "Image": "",
+      "Description": "I stedet for 2 HP, har du 3 HP og kan s\u00E5ledes holde til lidt mere.",
+      "UID": "AbiList-/b29ec719-ffde-46c8-8588-9d64c6d37e68"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90",
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/b29ec719-ffde-46c8-8588-9d64c6d37e68"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/88af24ee-f80c-4dba-a5c5-6fe43f949fb9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "4 HP",
+      "Image": "",
+      "Description": "I stedet for 3 HP, har du 4 HP og kan s\u00E5ledes holde til lidt mere.",
+      "UID": "AbiList-/764af6c2-e743-42ab-bc90-04b8157ff48b"
+    },
+    {
+      "Cost": 7,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/764af6c2-e743-42ab-bc90-04b8157ff48b"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/88af24ee-f80c-4dba-a5c5-6fe43f949fb9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "5 HP",
+      "Image": "",
+      "Description": "I stedet for 4 HP, har du 5 HP og kan s\u00E5ledes holde til lidt mere.",
+      "UID": "AbiList-/e8b7773a-9e47-42f5-9210-71489c6b810e"
+    },
+    {
+      "Cost": 8,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/e8b7773a-9e47-42f5-9210-71489c6b810e"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [
+        {
+          "UID": "ResList-/88af24ee-f80c-4dba-a5c5-6fe43f949fb9",
+          "Amount": 1
+        }
+      ],
+      "PlayerReq": "",
+      "Name": "6 HP",
+      "Image": "",
+      "Description": "I stedet for 5 HP, har du 6 HP og kan s\u00E5ledes holde til lidt mere.",
+      "UID": "AbiList-/b4e09363-6d1a-4d2d-b602-758f432cb3ee"
+    },
+    {
+      "Cost": 3,
+      "CostTypes": [
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Bonk",
+      "Image": "",
+      "Description": ": Du er i stand til at sl\u00E5 folk ud.  *Krav til udstyr: En Bonkk\u00F8lle.",
+      "UID": "AbiList-/06826052-0fa1-411a-ace8-af68f3558b08"
+    },
+    {
+      "Cost": 5,
+      "CostTypes": [
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/1588a19f-d6c4-49c3-bc66-f4591c8c52fa"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Bygmester",
+      "Image": "",
+      "Description": "Du er i stand til at opf\u00F8re huse \u2013 enten til dig selv eller for andre. *Brug af evnen: Du g\u00E5r ned til GM-bunkeren og fort\u00E6ller at du gerne vil bygge et hus. Prisen fastsl\u00E5s tilf\u00E6ldigt af GM\u2019erne og ligger et sted mellem 70 og 120 skilling. Du skal betale med det samme. Derefter f\u00E5r du et sk\u00F8de, hvor placeringen af huset ogs\u00E5 er beskrevet. Den der er i besiddelse af sk\u00F8det har ret til at medbringe et paviliontelt og s\u00E6tte det op der hvor det er beskrevet,",
+      "UID": "AbiList-/53153c9a-2d85-4983-baab-81c2c43baf0a"
+    },
+    {
+      "Cost": 0,
+      "CostTypes": [],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "L\u00E6se og Skrive",
+      "Image": "",
+      "Description": "",
+      "UID": "AbiList-/1588a19f-d6c4-49c3-bc66-f4591c8c52fa"
+    },
+    {
+      "Cost": 4,
+      "CostTypes": [
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d",
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a",
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "F\u00F8rstehj\u00E6lp",
+      "Image": "",
+      "Description": ": G\u00F8r det muligt at yde f\u00F8rstehj\u00E6lp til folk som er skadet s\u00E5 meget, at de er p\u00E5 0 HP. De kan ved brug af evnen bringes op til 1 HP, men heller ikke mere.  *Brug af evnen: Patienten skal omvikles med bandager der hvor han er s\u00E5ret eller hvor det virker passende. Det tager mindst 5 minutter inden personen er P\u00C5 1 HP efter BANDAGERNE er LAGT, og den KAN S\u00C5LEdes ikke bruges i KAMP. Du kan aldrig bringe en person op p\u00E5 mere end 1 HP med denne evne. Du kan ikke bruge evnen p\u00E5 dig selv. Du kan aldrig give RP eller MRP tilbage med denne evne.  *Krav til udstyr: Bandager, som skal vikles rundt om patienten. S\u00F8rg for at have rigeligt med da hver patient kr\u00E6ver sine egne bandager.",
+      "UID": "AbiList-/e7336aa4-6791-43b6-b17e-c2a45d0dd780"
+    },
+    {
+      "Cost": 5,
+      "CostTypes": [
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d",
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/e7336aa4-6791-43b6-b17e-c2a45d0dd780"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Herbalisme",
+      "Image": "",
+      "Description": "Ved brug af urter og salver kan man hj\u00E6lpe en s\u00E5ret person til at genvinde yderligere HP.  *Krav til udstyr: Bandager og urter eller salver.",
+      "UID": "AbiList-/31ed2711-046a-4caa-984f-7d5d253b2a73"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809",
+        "ResList-/48bf598c-47d8-442a-8bea-166714a8e423"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/1588a19f-d6c4-49c3-bc66-f4591c8c52fa"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/5f4158b8-32ee-449b-b139-af36c7f9a106",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Identifikation",
+      "Image": "",
+      "Description": "Du kender noget til de forskellige mystiske og magiske ting der findes, og kan genkende dem n\u00E5r du ser dem.",
+      "UID": "AbiList-/3f5e9fa5-f51b-4475-a446-fa5a1a35865a"
+    },
+    {
+      "Cost": 5,
+      "CostTypes": [
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/c4d0c7a6-988f-4123-b062-21b7c5e31201"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Jernsmed",
+      "Image": "",
+      "Description": "Du er i stand til at reparere metalrustninger. *Krav til udstyr: En hammer og en ambolt eller noget andet tungt",
+      "UID": "AbiList-/986d1404-4972-499e-a70e-9f780f12cae8"
+    },
+    {
+      "Cost": 5,
+      "CostTypes": [
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "L\u00E6dersmed",
+      "Image": "",
+      "Description": "Du er i stand til at reparere stof og l\u00E6derustninger. Du kan reparere RP p\u00E5 l\u00E6derrustning og stofrustning (deriblandt slagkofter). Personen skal have det meste af rustningen af for at du kan reparere den. Herefter skal du ved hj\u00E6lp af en syn\u00E5l og tr\u00E5d se ud som om du reparerer rustningen i 5 minutter, hvorefter alle RP er repareret. Det tager altid 5 minutter, uanset hvor mange RP rustningen har og hvor mange den har mistet. *Krav til udstyr: Tr\u00E5d og n\u00E5l.",
+      "UID": "AbiList-/c4d0c7a6-988f-4123-b062-21b7c5e31201"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Jernvilje (Forvirring)",
+      "Image": "",
+      "Description": "Du er skarp og kan bevare et k\u00F8lig overblik, selv n\u00E5r situationen virker forvirrende. Brug af evnen: Du er immun overfor forhekselser med effekten Forvirring. Evnen virker altid.",
+      "UID": "AbiList-/261b7005-64bf-4cfe-91fd-590af315ac7b"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Jernvilje (Frygt)",
+      "Image": "",
+      "Description": ": Du er frygtl\u00F8s, og forhekselser der skal g\u00F8re folk bange virker ikke p\u00E5 dig. Brug af evnen: Du er immun overfor forhekselser med effekten Frygt. Evnen virker altid.",
+      "UID": "AbiList-/64c2755e-a429-4a00-9003-0f823eaed99f"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Jernvilje (Smerte)",
+      "Image": "",
+      "Description": "Alle former for magisk smerte er virkningsl\u00F8s p\u00E5 dig.",
+      "UID": "AbiList-/fe125a1a-df37-48bb-881b-c367b294b431"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Jernvilje (Tortur)",
+      "Image": "",
+      "Description": "Den torturmetode der kan f\u00E5 dig til at tale \u00E6rligt er ikke opfundet endnu, og uanset hvor smertefuldt det bliver kan du udholde det og blive ved med at sige hvad der passer dig. Brug af evnen: Du er immun overfor anvendelse af evnen Tortur ",
+      "UID": "AbiList-/b0a1afa5-6afc-445d-bdc4-8bb2224b19b4"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/31ed2711-046a-4caa-984f-7d5d253b2a73",
+          "AbiList-/1588a19f-d6c4-49c3-bc66-f4591c8c52fa"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "L\u00E6gekunst",
+      "Image": "",
+      "Description": ": Du har l\u00E6rt at udf\u00F8re kirurgi, \u00E5reladning og andre avancerede behandlinger p\u00E5 s\u00E5rede personer, der kan g\u00F8re dem raske igen. Brug af evnen: Patienten skal v\u00E6re p\u00E5 1 HP eller mere for at du kan bruge L\u00E6gekunst. Du skal p\u00E5begynde behandlingen af patienten ved at sk\u00E6re i ham, \u00E5relade ham eller lign. afh\u00E6ngig af hvilke metoder du bruger. Dette tager 10 minutter hvor I skal v\u00E6re i gang hele tiden \u2013 du m\u00E5 ikke afbryde eller holde pause, og det kan ikke g\u00F8res hurtigere end 10 minutter. N\u00E5r du er f\u00E6rdig er patienten p\u00E5 sit maksimale antal HP, uanset hvor mange det er. Krav til udstyr: L\u00E6geudstyr; skalpel, knive, sakse og lign afh\u00E6ngig af behandlingsmetode.",
+      "UID": "AbiList-/67684e87-6a0c-4e4b-8eec-7c4f5a868472"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/48bf598c-47d8-442a-8bea-166714a8e423",
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/1588a19f-d6c4-49c3-bc66-f4591c8c52fa"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        },
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Identifikation",
+      "Image": "",
+      "Description": "Du kender noget til de forskellige mystiske og magiske ting der findes, og kan genkende dem n\u00E5r du ser dem.",
+      "UID": "AbiList-/2fc666c8-c92e-4023-895e-ef06b7155ea5"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d"
+      ],
+      "Exclusions": [
+        "AbiList-/2cbc286d-2bae-40c9-b897-fd753da2ba73",
+        "AbiList-/ae635351-a018-41d3-9e6e-45af26a3ccb8",
+        "AbiList-/86be5d02-17ed-499a-917a-f59eeb06eea3",
+        "AbiList-/6a62b6de-053f-419d-9db2-0c169e59ef7a",
+        "AbiList-/f47db710-a574-494c-9c8d-26be969f85cb"
+      ],
+      "Dependencies": [
+        [
+          "AbiList-/1588a19f-d6c4-49c3-bc66-f4591c8c52fa"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "L\u00E6remester - Borger",
+      "Image": "",
+      "Description": "Dine evner som handelsmand og h\u00E5ndv\u00E6rker er s\u00E5 fremskredne, at du kan opl\u00E6re andre. * Brug af evnen: I starten af spillet m\u00E5 du g\u00E5 op til GM-bunkeren og f\u00E5 udleveret 5 BXP, som repr\u00E6senteres af klisterm\u00E6rker. I l\u00F8bet af spillet m\u00E5 du uddele disse 5 BXP til 5 forskellige personer, som du opl\u00E6rer. Du m\u00E5 ikke gemme dem, og du m\u00E5 ikke give dem til spillere, der ikke kom til spillegangen. Bliver der opdaget nogen form for snyd med XP, vil alle involverede blive straffet H\u00C5RDT.",
+      "UID": "AbiList-/70fa37d8-e157-4256-bcc9-ec975e61614a"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87"
+      ],
+      "Exclusions": [
+        "AbiList-/70fa37d8-e157-4256-bcc9-ec975e61614a",
+        "AbiList-/ae635351-a018-41d3-9e6e-45af26a3ccb8",
+        "AbiList-/86be5d02-17ed-499a-917a-f59eeb06eea3",
+        "AbiList-/6a62b6de-053f-419d-9db2-0c169e59ef7a",
+        "AbiList-/f47db710-a574-494c-9c8d-26be969f85cb"
+      ],
+      "Dependencies": [
+        [
+          "AbiList-/5a4000b6-9f57-4c8e-b0dc-66f168cdbf5b"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "L\u00E6remester - J\u00E6ger",
+      "Image": "",
+      "Description": "Du har l\u00E6rt meget omkring at f\u00E6rdes i naturen og er nu klar til at opl\u00E6re andre i naturens hemmeligheder. * Brug af evnen: I starten af spillet m\u00E5 du g\u00E5 op til GM-bunkeren og f\u00E5 udleveret 5 JXP, som repr\u00E6senteres af klisterm\u00E6rker. I l\u00F8bet af spillet m\u00E5 du uddele disse 5 JXP til 5 forskellige personer, som du opl\u00E6rer. Du m\u00E5 ikke gemme dem, og du m\u00E5 ikke give dem til spillere, der ikke kom til spillegangen. Bliver der opdaget nogen form for snyd med XP, vil alle involverede blive straffet H\u00C5RDT.",
+      "UID": "AbiList-/2cbc286d-2bae-40c9-b897-fd753da2ba73"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [
+        "AbiList-/70fa37d8-e157-4256-bcc9-ec975e61614a",
+        "AbiList-/2cbc286d-2bae-40c9-b897-fd753da2ba73",
+        "AbiList-/86be5d02-17ed-499a-917a-f59eeb06eea3",
+        "AbiList-/6a62b6de-053f-419d-9db2-0c169e59ef7a",
+        "AbiList-/f47db710-a574-494c-9c8d-26be969f85cb"
+      ],
+      "Dependencies": [
+        [
+          "AbiList-/b29ec719-ffde-46c8-8588-9d64c6d37e68"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "L\u00E6remester - Kriger",
+      "Image": "",
+      "Description": "Du har overlevet nogle kampe og har efterh\u00E5nden l\u00E6rt at beg\u00E5 dig s\u00E5dan, at du kan l\u00E6re fra dig. * Brug af evnen: I starten af spillet m\u00E5 du g\u00E5 op til GM-bunkeren og f\u00E5 udleveret 5 KXP, som repr\u00E6senteres af klisterm\u00E6rker. I l\u00F8bet af spillet m\u00E5 du uddele disse 5 KXP til 5 forskellige personer, som du opl\u00E6rer. Du m\u00E5 ikke gemme dem, og du m\u00E5 ikke give dem til spillere, der ikke kom til spillegangen. Bliver der opdaget nogen form for snyd med XP, vil alle involverede blive straffet H\u00C5RDT.",
+      "UID": "AbiList-/ae635351-a018-41d3-9e6e-45af26a3ccb8"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+      ],
+      "Exclusions": [
+        "AbiList-/70fa37d8-e157-4256-bcc9-ec975e61614a",
+        "AbiList-/2cbc286d-2bae-40c9-b897-fd753da2ba73",
+        "AbiList-/ae635351-a018-41d3-9e6e-45af26a3ccb8",
+        "AbiList-/6a62b6de-053f-419d-9db2-0c169e59ef7a",
+        "AbiList-/f47db710-a574-494c-9c8d-26be969f85cb"
+      ],
+      "Dependencies": [
+        [
+          "AbiList-/06826052-0fa1-411a-ace8-af68f3558b08"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "L\u00E6remester - Lyssky",
+      "Image": "",
+      "Description": "Du er blevet s\u00E5 dygtig til at undg\u00E5 lovens lange arm, at du t\u00F8r give andre r\u00E5d og viden om hvordan det skal g\u00F8res. * Brug af evnen: I starten af spillet m\u00E5 du g\u00E5 op til GM-bunkeren og f\u00E5 udleveret 5 LXP, som repr\u00E6senteres af klisterm\u00E6rker. I l\u00F8bet af spillet m\u00E5 du uddele disse 5 LXP til 5 forskellige personer, som du opl\u00E6rer. Du m\u00E5 ikke gemme dem, og du m\u00E5 ikke give dem til spillere, der ikke kom til spillegangen. Bliver der opdaget nogen form for snyd med XP, vil alle involverede blive straffet H\u00C5RDT.",
+      "UID": "AbiList-/86be5d02-17ed-499a-917a-f59eeb06eea3"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809"
+      ],
+      "Exclusions": [
+        "AbiList-/70fa37d8-e157-4256-bcc9-ec975e61614a",
+        "AbiList-/ae635351-a018-41d3-9e6e-45af26a3ccb8",
+        "AbiList-/f47db710-a574-494c-9c8d-26be969f85cb",
+        "AbiList-/86be5d02-17ed-499a-917a-f59eeb06eea3",
+        "AbiList-/2cbc286d-2bae-40c9-b897-fd753da2ba73"
+      ],
+      "Dependencies": [
+        [
+          "AbiList-/f3815f24-33eb-4483-b25c-5addfa461503"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/5f4158b8-32ee-449b-b139-af36c7f9a106",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "L\u00E6remester - Pr\u00E6st",
+      "Image": "",
+      "Description": "Din viden om Guderne er nu blevet s\u00E5 stor, at du kan tage akolytter ind og fort\u00E6lle dem, hvordan de skal f\u00F8lge Gudernes ord. * Brug af evnen: I starten af spillet m\u00E5 du g\u00E5 op til GM-bunkeren og f\u00E5 udleveret 5 PXP, som repr\u00E6senteres af klisterm\u00E6rker. I l\u00F8bet af spillet m\u00E5 du uddele disse 5 PXP til 5 forskellige personer, som du opl\u00E6rer. Du m\u00E5 ikke gemme dem, og du m\u00E5 ikke give dem til spillere, der ikke kom til spillegangen. Bliver der opdaget nogen form for snyd med XP, vil alle involverede blive straffet H\u00C5RDT.",
+      "UID": "AbiList-/6a62b6de-053f-419d-9db2-0c169e59ef7a"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/48bf598c-47d8-442a-8bea-166714a8e423"
+      ],
+      "Exclusions": [
+        "AbiList-/70fa37d8-e157-4256-bcc9-ec975e61614a",
+        "AbiList-/2cbc286d-2bae-40c9-b897-fd753da2ba73",
+        "AbiList-/86be5d02-17ed-499a-917a-f59eeb06eea3",
+        "AbiList-/6a62b6de-053f-419d-9db2-0c169e59ef7a",
+        "AbiList-/ae635351-a018-41d3-9e6e-45af26a3ccb8"
+      ],
+      "Dependencies": [
+        [
+          "AbiList-/f3815f24-33eb-4483-b25c-5addfa461503"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/5f4158b8-32ee-449b-b139-af36c7f9a106",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "L\u00E6remester-Troldmand",
+      "Image": "",
+      "Description": "Du har l\u00E6rt s\u00E5 meget om de magiske vinde, at du kan st\u00E5 p\u00E5 egne ben og s\u00E5gar tage dig et par l\u00E6rlinge. * Brug af evnen: I starten af spillet m\u00E5 du g\u00E5 op til GM-bunkeren og f\u00E5 udleveret 5 TXP, som repr\u00E6senteres af klisterm\u00E6rker. I l\u00F8bet af spillet m\u00E5 du uddele disse 5 TXP til 5 forskellige personer, som du opl\u00E6rer. Du m\u00E5 ikke gemme dem, og du m\u00E5 ikke give dem til spillere, der ikke kom til spillegangen. Bliver der opdaget nogen form for snyd med XP, vil alle involverede blive straffet H\u00C5RDT.",
+      "UID": "AbiList-/f47db710-a574-494c-9c8d-26be969f85cb"
+    },
+    {
+      "Cost": 7,
+      "CostTypes": [
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/70fa37d8-e157-4256-bcc9-ec975e61614a"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Legendarisk L\u00E6remester - Borger",
+      "Image": "",
+      "Description": "Dine evner som handelsmand og h\u00E5ndv\u00E6rker er kendt i hele riget, og du har en stor flok l\u00E6rlinge du opl\u00E6rer i at blive lige s\u00E5 dygtig som dig. * Brug af evnen: Du har yderligere 5 BXP-klisterm\u00E6rker hver spillegang. Du har s\u00E5ledes 10 XP ialt som du kan fordele til op til 10 personer, heriblandt m\u00E5 du selv modtage 1. For n\u00E6rmere beskrivelse af reglerne for at fordele XP se f\u00E6rdigheden L\u00E6remester \u2013 Borger p\u00E5 side 75 i grundbogen.",
+      "UID": "AbiList-/1f5ef71e-b91b-45a8-ad51-9dec9ce65eaa"
+    },
+    {
+      "Cost": 7,
+      "CostTypes": [
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/2cbc286d-2bae-40c9-b897-fd753da2ba73"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Legendarisk L\u00E6remester - J\u00E6gerr",
+      "Image": "",
+      "Description": "J\u00E6gere over hele kejserriget kender dine fabelagtige evner med bue og pil og ved hvordan du kan overleve under selv de barskeste omst\u00E6ndigheder og flokkes til dig for at l\u00E6re naturens hemmeligheder. * Brug af evnen: Du har yderligere 5 JXP-klisterm\u00E6rker hver spillegang. Du har s\u00E5ledes 10 XP ialt som du kan fordele til op til 10 personer, heriblandt m\u00E5 du selv modtage 1. For n\u00E6rmere beskrivelse af reglerne for at fordele XP se f\u00E6rdigheden L\u00E6remester \u2013 Borger p\u00E5 side 75 i grundbogen.",
+      "UID": "AbiList-/b39f69fe-a8f0-475b-9c7c-ae58bad91242"
+    },
+    {
+      "Cost": 7,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/ae635351-a018-41d3-9e6e-45af26a3ccb8"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Legendarisk L\u00E6remester Kriger",
+      "Image": "",
+      "Description": ": Blandt soldater og h\u00E6rf\u00F8rere viden om er du kendt for dine evner med et sv\u00E6rd. Du betragtes af mange som en mester indenfor krigens kunst og mange h\u00E5befulde, unge soldater kommer til dig for at l\u00E6re mere. * Du har yderligere 5 KXP-klisterm\u00E6rker hver spillegang. Du har s\u00E5ledes 10 XP ialt, som du kan fordele til op til",
+      "UID": "AbiList-/00ed0fd5-3962-43bc-b17e-080e2fedf415"
+    },
+    {
+      "Cost": 7,
+      "CostTypes": [
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/86be5d02-17ed-499a-917a-f59eeb06eea3"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Legendarisk L\u00E6remester - Lysskjy",
+      "Image": "",
+      "Description": "Selvom ingen vil indr\u00F8mme at de ved hvem du er, er du alligevel i underverdenen kendt som en dygtig og snild person. Folk betragter dig som Ranalds yndling og flokkes til dig for at l\u00E6re dine hemmeligheder. ",
+      "UID": "AbiList-/20ad231a-eb69-4b83-bab9-720756b639a4"
+    },
+    {
+      "Cost": 7,
+      "CostTypes": [
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/6a62b6de-053f-419d-9db2-0c169e59ef7a"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/5f4158b8-32ee-449b-b139-af36c7f9a106",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Legendarisk L\u00E6remester \u2013 Pr\u00E6st ",
+      "Image": "",
+      "Description": ": Du forst\u00E5r Gudernes ord og pr\u00E6ster af alle religioner lytter til dine r\u00E5d og din viden, og kommer til dig for at forst\u00E5 Gudernes veje bedre.",
+      "UID": "AbiList-/1ec9f135-ab11-4e51-a38a-23d295904e1c"
+    },
+    {
+      "Cost": 7,
+      "CostTypes": [
+        "ResList-/48bf598c-47d8-442a-8bea-166714a8e423"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/f47db710-a574-494c-9c8d-26be969f85cb"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/5f4158b8-32ee-449b-b139-af36c7f9a106",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Legendarisk L\u00E6remester - Troldmand",
+      "Image": "",
+      "Description": "Magiens uforst\u00E5elige verden er for dig klar som vand, og du ser de magiske vinde bl\u00E6se tydeligt. Din viden om magien er enorm og troldm\u00E6nd fra alle kollegier str\u00F8mmer til dig for at l\u00E6re af din enorme viden. * Brug af evnen: Du har yderligere 5 TXP-klisterm\u00E6rker hver spillegang. Du har s\u00E5ledes 10 XP ialt, som du kan fordele til op til 10 personer, heriblandt m\u00E5 du selv modtage 1",
+      "UID": "AbiList-/4a943cb8-d2d7-4b94-8547-a22ce35b3960"
+    },
+    {
+      "Cost": 4,
+      "CostTypes": [
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d",
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90",
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809",
+        "ResList-/48bf598c-47d8-442a-8bea-166714a8e423"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/1588a19f-d6c4-49c3-bc66-f4591c8c52fa"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Lensherre",
+      "Image": "",
+      "Description": "Du forst\u00E5r at styre land og indkr\u00E6ve skatter fra dem der arbejder p\u00E5 det. Du er m\u00E5ske af nobel byrd eller du har l\u00E6rt det gennem h\u00E5rdt arbejde.**Krav til udstyr: For at kunne besidde jord skal du have faner \u2013 en for hvert len du besidder. Disse skal v\u00E6re mindst 1\u00BD meter h\u00F8je og der skal v\u00E6re et flag p\u00E5 i dine farver.",
+      "UID": "AbiList-/74b5b0e5-4d7b-462d-a903-9429db21f2b7"
+    },
+    {
+      "Cost": 3,
+      "CostTypes": [
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "S. V. - Bue",
+      "Image": "",
+      "Description": "Du er i stand til at anvende en bue i kamp.",
+      "UID": "AbiList-/5a4000b6-9f57-4c8e-b0dc-66f168cdbf5b"
+    },
+    {
+      "Cost": 5,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "S. V. - Kastekniv",
+      "Image": "",
+      "Description": "Du er i stand til at anvende en kastekniv. Selvom v\u00E5bnet ikke er meget bevendt i kamp mod soldater, er det nyttigt til mord af ubeskyttede folk.",
+      "UID": "AbiList-/0f5006c3-2151-4775-b89c-35beb19a65e1"
+    },
+    {
+      "Cost": 7,
+      "CostTypes": [
+        "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d",
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "S. V. - Krudtv\u00E5ben",
+      "Image": "",
+      "Description": ": Du er i stand til at anvende at krudtv\u00E5ben i kamp. Du kan b\u00E5de lade og skyde med v\u00E5bnet. **Krav til udstyr: Krudtv\u00E5ben, ladestok, krudthorn og ammunition.  Evnen koster desuden 1000 skilling, som betales i GM bunkeren ved k\u00F8b af evnen.",
+      "UID": "AbiList-/c0075288-3f90-4b48-9881-b37892416250"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "S. V. - K\u00E6dev\u00E5ben",
+      "Image": "",
+      "Description": "Du har l\u00E6rt den sv\u00E6re kunst at anvende k\u00E6dev\u00E5ben i kamp. Du m\u00E5 s\u00E5ledes anvende v\u00E5ben med k\u00E6der p\u00E5 op til 15 cm i l\u00E6ngde.",
+      "UID": "AbiList-/c1597f4a-043b-4f5c-ab48-031fcae187d2"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "S. V. - T\u00E5rnskjold",
+      "Image": "",
+      "Description": "Du er blevet tr\u00E6net i at k\u00E6mpe med meget store skjold og i stand til at anvende dem effektivt. Du m\u00E5 s\u00E5ledes bruge skjolde der er h\u00F8jere end halvdelen af din egen h\u00F8jde og/eller bredere end tredjedel af din egen h\u00F8jde.",
+      "UID": "AbiList-/18917fb2-3f5d-49e0-a136-2c7b7193c5bc"
+    },
+    {
+      "Cost": 14,
+      "CostTypes": [
+        "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87",
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+      ],
+      "Exclusions": [],
+      "Dependencies": [
+        [
+          "AbiList-/06826052-0fa1-411a-ace8-af68f3558b08"
+        ]
+      ],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Snigmord",
+      "Image": "",
+      "Description": "Du er i stand til at beg\u00E5 snigmord som beskrevet i afsnittet \u201D Snigmord\u201D p\u00E5 side 48. i grundbogen. *Krav til udstyr: En kniv til at beg\u00E5 snigmordet med.",
+      "UID": "AbiList-/92344c93-30db-4380-b00f-9af842c9546d"
+    },
+    {
+      "Cost": 6,
+      "CostTypes": [
+        "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+      ],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [
+        {
+          "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+          "Amount": 2
+        }
+      ],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Tortur",
+      "Image": "",
+      "Description": "Du har l\u00E6rt at torturere folk. Dette er n\u00E6rmere beskrevet i afsnittet \u201DTortur\u201D p\u00E5 side 55 i grundbogen. *Krav til udstyr: Torturinstrumenter. Som minimum en kniv, men andre og mere opfindsomme instrumenter er ogs\u00E5 fedt. Disse skal naturligvis v\u00E6re udformet s\u00E5 de ikke er farlige i virkeligheden, f.eks. lavet i gaffa eller latex.",
+      "UID": "AbiList-/58d681ed-1c85-46e9-a3ba-3a3c92857566"
     }
   ],
   "CarList": [
     {
       "Cost": 0,
       "CostTypes": [],
-      "Exclusions": [],
-      "Dependencies": [],
-      "FreeAbilities": [],
-      "Discounts": [],
-      "AffectedResources": [
-        {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
-          "Amount": 2
-        }
+      "Exclusions": [
+        "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+        "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+        "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+        "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90"
       ],
+      "Dependencies": [],
+      "FreeAbilities": [
+        "AbiList-/1588a19f-d6c4-49c3-bc66-f4591c8c52fa"
+      ],
+      "Discounts": [],
+      "AffectedResources": [],
       "PlayerReq": "",
-      "Name": "Warrior",
+      "Name": "Akedemiker",
       "Image": "",
-      "Description": "am gonna swing a sword",
-      "UID": "CarList-/b35cce7e-14bf-4679-9b03-0fdf30f2a379"
+      "Description": "Akademikeren er en l\u00E6rd person. Hele hans liv g\u00E5r med at studere og l\u00E6se for at udvide hans horisont. Han er meget klogere end de almene mennesker i Warhammer verdenen. De er vise personer som der indtager h\u00F8je poster i Kejserriget. Akademikeren kan indtage mange pladser i samfundet. Han kan v\u00E6re en ekspert som folk henvender sig til for at f\u00E5 hj\u00E6lp, dette kunne blandt andet v\u00E6re som en historiker eller en sagf\u00F8rer. Man kan ogs\u00E5 v\u00E6lge at v\u00E6re en magiker og tage imod betaling for magiske ydelser. Akademikeren kan ogs\u00E5 tage hvervet som pr\u00E6st, og bruge sin tid p\u00E5 at k\u00E6mpe for sin gud og sprede dennes budskab. Akademikeren er den kloge person blandt folk. Han har lettere ved at l\u00E6re ting som p\u00E5 den ene eller anden m\u00E5de vedr\u00F8re viden og videnskab. Han er langt ogs\u00E5 den bedste til at studere magi og dens mystiske veje, og gudernes vilje. *En akademiker starter med evnen L\u00E6se \u0026 Skrive",
+      "UID": "CarList-/5f4158b8-32ee-449b-b139-af36c7f9a106"
     },
     {
       "Cost": 0,
       "CostTypes": [],
-      "Exclusions": [],
-      "Dependencies": [
-        [
-          "CarList-/b35cce7e-14bf-4679-9b03-0fdf30f2a379"
-        ]
+      "Exclusions": [
+        "CarList-/5f4158b8-32ee-449b-b139-af36c7f9a106",
+        "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+        "CarList-/fe52b330-8712-4431-b387-758869b762b0",
+        "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90"
       ],
-      "FreeAbilities": [],
+      "Dependencies": [],
+      "FreeAbilities": [
+        "AbiList-/1588a19f-d6c4-49c3-bc66-f4591c8c52fa"
+      ],
       "Discounts": [],
-      "AffectedResources": [
-        {
-          "UID": "ResList-/669e6426-0982-418f-8e9d-ad2ee903a85d",
-          "Amount": 2
-        }
-      ],
+      "AffectedResources": [],
       "PlayerReq": "",
-      "Name": "Warlock",
+      "Name": "Borger",
       "Image": "",
-      "Description": "-_-",
-      "UID": "CarList-/1db8ddb3-8de3-4ff1-9630-7cf7a0f127b5"
+      "Description": "Borgeren er den almene respekterede person i verdenen. Denne udg\u00F8r den st\u00F8rste del af befolkningen i de fleste byer rundt omkring i verdenen. Det er de mange borgere der s\u00F8rger for at de mange samfund kan k\u00F8re rundt, hverken krigere eller akademikere bygger huse eller dyrker jorden, og uden dette var der intet sted at bo og intet at spise. Borgeren kan ogs\u00E5 studere lokale urter og derigennem tjene penge p\u00E5 at v\u00E6re en alkymist, der s\u00E6lger hans/hendes drikke til folk. Borgeren lever oftest af enten ved at v\u00E6re en handelsmand, som kan handle med alt lige fra de fineste vine og oste til k\u00E5l og k\u00F8d. Han kan ogs\u00E5 v\u00E6re h\u00E5ndv\u00E6rker og besk\u00E6ftige sig med at lave og reparere ting. Dette kunne v\u00E6re job som smed, byggemester eller anden form for h\u00E5ndv\u00E6rk. Borgen er god til mange af de ting som b\u00E6rer en almindelig person igennem livet indenfor lovens rammer. Han satser p\u00E5 det sikre. Han vil bare blive bedre til hans erhverv og tjene s\u00E5 mange penge som muligt. Borgere er som ofte rige fordi der er stor eftersp\u00F8rgsel efter deres ydelser. *En Borger starter med evnen L\u00E6se \u0026 Skrive.",
+      "UID": "CarList-/9be04d08-3abe-4720-af81-8e861529c55d"
+    },
+    {
+      "Cost": 0,
+      "CostTypes": [],
+      "Exclusions": [
+        "CarList-/5f4158b8-32ee-449b-b139-af36c7f9a106",
+        "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+        "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90",
+        "CarList-/fe52b330-8712-4431-b387-758869b762b0"
+      ],
+      "Dependencies": [],
+      "FreeAbilities": [
+        "AbiList-/5a4000b6-9f57-4c8e-b0dc-66f168cdbf5b"
+      ],
+      "Discounts": [],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "J\u00E6ger",
+      "Image": "",
+      "Description": "J\u00E6geren er en person der har det bedst v\u00E6k fra byen. Han h\u00F8rer til p\u00E5 de \u00E5bne sletter, i den m\u00F8rke skov, eller p\u00E5 de store landeveje. Han evner at finde rundt og klarer sig selv kan ikke opn\u00E5s af andre personer. Han er en fri sj\u00E6l der klarer sig selv, og er ikke typen der binder sig til et enkelt erhverv. *En J\u00E6ger starter med evnen Specialistv\u00E5ben: Bue",
+      "UID": "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c"
+    },
+    {
+      "Cost": 0,
+      "CostTypes": [],
+      "Exclusions": [
+        "CarList-/5f4158b8-32ee-449b-b139-af36c7f9a106",
+        "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+        "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+        "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90"
+      ],
+      "Dependencies": [],
+      "FreeAbilities": [
+        "AbiList-/b29ec719-ffde-46c8-8588-9d64c6d37e68"
+      ],
+      "Discounts": [],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Kriger",
+      "Image": "",
+      "Description": "Krigen er den, som ved alt om kamp og krig. Ingen andre personer end kan blive bedre til kamp end krigeren. Han er den professionelle soldat der tager kampen op imod alt lige fra den usling der snyder i kortspil til den vilde ork \u2013 eller m\u00E5ske k\u00E6mper p\u00E5 den anden side af loven. Han forst\u00E5 vigtigheden i disciplin og loyalitet. *En kriger starter med evnen 3 HP.",
+      "UID": "CarList-/fe52b330-8712-4431-b387-758869b762b0"
+    },
+    {
+      "Cost": 0,
+      "CostTypes": [],
+      "Exclusions": [
+        "CarList-/5f4158b8-32ee-449b-b139-af36c7f9a106",
+        "CarList-/9be04d08-3abe-4720-af81-8e861529c55d",
+        "CarList-/a6bb388d-4379-48da-aa37-268d7c590d5c",
+        "CarList-/fe52b330-8712-4431-b387-758869b762b0"
+      ],
+      "Dependencies": [],
+      "FreeAbilities": [
+        "AbiList-/06826052-0fa1-411a-ace8-af68f3558b08"
+      ],
+      "Discounts": [],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Lyssky",
+      "Image": "",
+      "Description": "Hvis borgeren er den h\u00E5rdtarbejdende person, som tjener sine penge p\u00E5 \u00E6rlig vis, s\u00E5 en lyssky person det modsatte. En lyssky person er en doven person, der hellere vil stj\u00E6le og fuppe \u00E6rlige personer for deres penge end selv at lave en god dags arbejde. En lyssky kan ogs\u00E5 v\u00E6re en god og \u00E6rlig person som k\u00E6mper den gode kamp med de beskidt kneb eller som er blevet tvunget ud i kriminelt liv. *start med evnen Bonk",
+      "UID": "CarList-/1f32a484-5235-4aef-a2c9-315c60215c90"
     }
   ],
   "RelList": [
@@ -162,7 +1545,7 @@
       "Discounts": [],
       "AffectedResources": [
         {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
+          "UID": "ResList-/88af24ee-f80c-4dba-a5c5-6fe43f949fb9",
           "Amount": 2
         }
       ],
@@ -170,7 +1553,7 @@
       "Name": "Cult Of Sigmar",
       "Image": "",
       "Description": "The Cult of Sigmar, also sometimes called the Church of Sigmar, the Holy Temple of Sigmar, the Clergy of Sigmar or simply the Sigmarite Cult, is the state church of the Empire that administrates the worship of that realm\u0027s patron god, Sigmar Heldenhammer.",
-      "UID": "RelList-/625f9c7e-b10e-48c4-9f2c-077906d46302"
+      "UID": "RelList-/fdb83d53-bc09-4d7e-96ee-c99f04a1dfe1"
     },
     {
       "Cost": 0,
@@ -179,17 +1562,26 @@
       "Dependencies": [],
       "FreeAbilities": [],
       "Discounts": [],
-      "AffectedResources": [
-        {
-          "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd",
-          "Amount": 2
-        }
-      ],
+      "AffectedResources": [],
       "PlayerReq": "",
-      "Name": "Cult Of Winton",
+      "Name": "Guden Morr",
       "Image": "",
-      "Description": "The Cult of Winton, also sometimes called the Church of Science, the Holy Temple of the Moon, the Clergy of Winton or simply the Science Cult, is the state church of the Empire that administrates the worship of the Moon\u0027s god, Winton  Angy.",
-      "UID": "RelList-/525f9c7e-b10e-48c4-9f2c-077906d46302"
+      "Description": "Morr er Gud over D\u00F8den og Underverdenens Hersker. Derudover er han gud for dr\u00F8mme og dr\u00F8mmesyn. Hans hellige tegn er Ravnen og Portalen. S\u00F8n af Taal og Rhya og \u00E6gtemand til Verena; far til Myrmidia og Shallya. Morr tilbedes de fleste steder i den Gamle Verden af folk fra alle samfundslag, men er mest popul\u00E6r i syden hvor man har store problemer med Gengangere, en ting som han k\u00E6mper aktivt imod. Han er ikke en hverdagsgud, og de fleste anser ofte hans pr\u00E6ster for at bringe uheld. Han tilbedes oftest af de efterladte, der lider savn, som beder ham modtage deres afd\u00F8de i hans Rige ved at lede dem sikkert dertil og v\u00E5ge over dem.",
+      "UID": "RelList-/d8894437-c041-4d11-a004-8dbca7018ec2"
+    },
+    {
+      "Cost": 0,
+      "CostTypes": [],
+      "Exclusions": [],
+      "Dependencies": [],
+      "FreeAbilities": [],
+      "Discounts": [],
+      "AffectedResources": [],
+      "PlayerReq": "",
+      "Name": "Guden Myrmidia",
+      "Image": "",
+      "Description": "Gudinde for soldater og strateger. Hendes hellige tegn er Spyddet bag Skjoldet. Datter af Verena og Morr. Myrmidia er mest popul\u00E6r i den sydlige del af den Gamle Verden, specielt Tilea og Estalia, selvom hun har en del loyale tilh\u00E6ngere i alle dele af den Gamle Verden. Dette er s\u00E6rligt blandt krigere og stridsm\u00E6nd der ikke bekender sig til Ulric eller Sigmar. Selvom b\u00E5de Sigmar og Ulric er st\u00E6rke krigere, har de begge mange andre ting at bekymre sig om, hvorimod Myrmidia udelukkende t\u00E6nker p\u00E5 krig og strategi.",
+      "UID": "RelList-/1aa11a56-4c43-4526-a40b-e6150781ac9b"
     }
   ],
   "IteList": [
@@ -205,40 +1597,188 @@
       "Name": "hammer",
       "Image": "",
       "Description": "Le-Bonk",
-      "UID": "IteList-/86bf6c86-cdae-4905-b0e2-45ac675555dd"
+      "UID": "IteList-/bb491b21-503f-48fa-9267-5565a1854bbd"
     }
   ],
   "ResList": [
     {
       "Type": 0,
+      "TypeName": "Stat",
       "Name": "health",
       "Image": "",
       "Description": "ye dead if this be zero",
-      "UID": "ResList-/dd75f8cc-7cb5-430c-b81f-e7bc2479f2bd"
+      "UID": "ResList-/88af24ee-f80c-4dba-a5c5-6fe43f949fb9"
     },
     {
       "Type": 0,
+      "TypeName": "Stat",
       "Name": "Mana",
       "Image": "",
       "Description": "le-Magic juice",
-      "UID": "ResList-/669e6426-0982-418f-8e9d-ad2ee903a85d"
+      "UID": "ResList-/66cef049-7cd1-4390-a4ca-2af106dbe541"
     },
     {
       "Type": 1,
-      "Name": "xp",
+      "TypeName": "XP",
+      "Name": "Kriger XP",
       "Image": "",
       "Description": "GAINS!!",
-      "UID": "ResList-/9fda2e31-2b20-42e9-927e-e3dccd977896"
+      "UID": "ResList-/1267d789-b8d0-48b0-a720-e47709afe47a"
+    },
+    {
+      "Type": 1,
+      "TypeName": "XP",
+      "Name": "Borger XP",
+      "Image": "",
+      "Description": "GAINS!!",
+      "UID": "ResList-/9008cb20-e93e-4b24-8f3c-b2c1545e453d"
+    },
+    {
+      "Type": 1,
+      "TypeName": "XP",
+      "Name": "Lyssky XP",
+      "Image": "",
+      "Description": "GAINS!!",
+      "UID": "ResList-/be18a2df-08c6-4e2a-bef7-16e71ac1bb90"
+    },
+    {
+      "Type": 1,
+      "TypeName": "XP",
+      "Name": "Pr\u00E6st XP",
+      "Image": "",
+      "Description": "GAINS!!",
+      "UID": "ResList-/159bb79d-8fc0-4073-b96a-281c3eb35809"
+    },
+    {
+      "Type": 1,
+      "TypeName": "XP",
+      "Name": "J\u00E6ger XP",
+      "Image": "",
+      "Description": "",
+      "UID": "ResList-/159ff4b7-85ab-43d2-a39b-39210bd1dc87"
+    },
+    {
+      "Type": 0,
+      "TypeName": "Stat",
+      "Name": "N\u00E6vekamp",
+      "Image": "",
+      "Description": "Bruges til at sl\u00E5s!",
+      "UID": "ResList-/850e1726-08c2-4ef0-a8e7-3a242052cad9"
+    },
+    {
+      "Type": 1,
+      "TypeName": "XP",
+      "Name": "Troldmands XP",
+      "Image": "",
+      "Description": "",
+      "UID": "ResList-/48bf598c-47d8-442a-8bea-166714a8e423"
     },
     {
       "Type": 2,
-      "Name": "DKK",
+      "TypeName": "Currency",
+      "Name": "Skilling",
       "Image": "",
-      "Description": "GAINS!!",
-      "UID": "ResList-/8fda2e31-2b20-42e9-927e-e3dccd977896"
+      "Description": "M\u00F8ntfoden i Kejserriget",
+      "UID": "ResList-/24d13fff-516e-4c3d-95e4-fab40b0496fa"
     }
   ],
-  "IcoList": [],
+  "IcoList": [
+    {
+      "imgName": "confirm.png",
+      "imgSize": 15333,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\confirm.png"
+    },
+    {
+      "imgName": "discord.png",
+      "imgSize": 31929,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\discord.png"
+    },
+    {
+      "imgName": "ECC structure.png",
+      "imgSize": 492955,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\ECC structure.png"
+    },
+    {
+      "imgName": "ECC structure2.png",
+      "imgSize": 489267,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\ECC structure2.png"
+    },
+    {
+      "imgName": "ECC structure3.png",
+      "imgSize": 522650,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\ECC structure3.png"
+    },
+    {
+      "imgName": "ECC structure4.png",
+      "imgSize": 479467,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\ECC structure4.png"
+    },
+    {
+      "imgName": "files_overview1.png",
+      "imgSize": 13867,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\files_overview1.png"
+    },
+    {
+      "imgName": "flowgetCalls.png",
+      "imgSize": 40877,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\flowgetCalls.png"
+    },
+    {
+      "imgName": "flowinitECC.png",
+      "imgSize": 31967,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\flowinitECC.png"
+    },
+    {
+      "imgName": "flowpostData.png",
+      "imgSize": 39386,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\flowpostData.png"
+    },
+    {
+      "imgName": "hj\u00E6lp.png",
+      "imgSize": 60742,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\hj\u00E6lp.png"
+    },
+    {
+      "imgName": "internal communication.png",
+      "imgSize": 11125,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\internal communication.png"
+    },
+    {
+      "imgName": "linked_calls.png",
+      "imgSize": 189156,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\linked_calls.png"
+    },
+    {
+      "imgName": "noadress.png",
+      "imgSize": 84623,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\noadress.png"
+    },
+    {
+      "imgName": "server-client.png",
+      "imgSize": 157685,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\server-client.png"
+    },
+    {
+      "imgName": "sketch of interface.png",
+      "imgSize": 147366,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\sketch of interface.png"
+    },
+    {
+      "imgName": "sketchinterface2.png",
+      "imgSize": 199516,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\sketchinterface2.png"
+    },
+    {
+      "imgName": "testing_read.png",
+      "imgSize": 39625,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\testing_read.png"
+    },
+    {
+      "imgName": "verifysamelocation.png",
+      "imgSize": 888070,
+      "imgPath": "E:\\onM_Doc\\Programmering\\config destination\\verifysamelocation.png"
+    }
+  ],
   "Temppath": "",
   "PlaceholderImage": "/Images/Gallery.png"
 }

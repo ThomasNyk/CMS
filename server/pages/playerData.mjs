@@ -100,11 +100,13 @@ export function compileAdminPlayerList(req, res) {
                 let files = fs.readdirSync(path);
                 files.forEach((file) => {
                     let obj = importObject(path + "/" + file);
-                    let objSmall = {
-                        "name": obj.playerInfo.name,
-                        "id": obj.playerInfo.id
+                    if (Object.keys(obj).length != 0) {
+                        let objSmall = {
+                            "name": obj.playerInfo.name,
+                            "id": obj.playerInfo.id
+                        }
+                        arr.push(objSmall);
                     }
-                    arr.push(objSmall);
                 });
                 console.log(arr);
                 okResponse(res, arr);
