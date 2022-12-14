@@ -1,11 +1,11 @@
-const online = false;
+const online = true;
 
 import * as http from 'http';
 import * as fs from 'fs';
 
 let hostname;
-hostname = online ? '192.168.59.179' : '192.168.0.139';
-const port = 8000;
+hostname = online ? '192.168.0.142' : '192.168.0.139';
+const port = 3000;
 
 import { postHandler, getHandler, fileResponse, errorResponse } from './server/responseHandlers.mjs';
 

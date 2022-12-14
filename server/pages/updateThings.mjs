@@ -328,7 +328,7 @@ export function redeemToken(req, res) {
         .catch(err => errorResponse(res, 500, "Could not get PostData from client: " + err))
         .then(data => {
             let tokenList = importObject("server/data/tokens.json", res);
-
+            //console.log(data);
             let toReturn = null;
             for (const [key, value] of Object.entries(tokenList)) {
                 for (let i = 0; i < value.length; i++) {
@@ -338,6 +338,7 @@ export function redeemToken(req, res) {
                     }
                 }
             }
+            //console.log(toReturn);
             if (toReturn == null) {
                 errorResponse(res, 404, "Invalid Token");
                 return 1;

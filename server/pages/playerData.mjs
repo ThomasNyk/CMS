@@ -1,8 +1,9 @@
 import { errorResponse } from "../responseHandlers.mjs";
-import { getPostData, validateUserExistence, determineMimeType, importObject } from "../serverHelpers.mjs";
+import { getPostData, validateUserExistence, determineMimeType, importObject, exportObject } from "../serverHelpers.mjs";
 import { getObjectbyProperty, okResponse } from "./updateThings.mjs";
 import * as fs from 'fs';
 import exp from "constants";
+import { uuid } from "uuidv4";
 
 export function GetPlayerData(req, res) {
     getPostData(req)
@@ -122,4 +123,23 @@ export function verifyAdmin(playerId, res) {
         return true;
     }
     return false;
+}
+
+export function newUser(req, res) {
+    getPostData(req)
+        .catch(err => {
+            errorResponse(res, 500, err);
+            console.log("Could not get postData: " + err);
+        })
+        .then(data => {
+            let logins = importObject("server/data/logins.json");
+            logins.users.push({
+                "username": data.username,
+                "password": data.password,
+                "id": uuid(),
+                "isAdmin": data.isAdmin,
+            });
+            exportObject("server/data/logins.json", logins, res);
+        });
+    okResponse(res);
 }
