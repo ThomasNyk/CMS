@@ -1,6 +1,6 @@
 import { errorResponse } from "../responseHandlers.mjs";
 import { getPostData, validateUserExistence, determineMimeType, importObject, exportObject } from "../serverHelpers.mjs";
-import { getObjectbyProperty, okResponse } from "./updateThings.mjs";
+import { getObjectbyProperty, getObjectIndexbyProperty, okResponse } from "./updateThings.mjs";
 import * as fs from 'fs';
 import exp from "constants";
 import { uuid } from "uuidv4";
@@ -133,6 +133,7 @@ export function newUser(req, res) {
         })
         .then(data => {
             let logins = importObject("server/data/logins.json");
+            if (getObjectIndexbyProperty(logins.users, "username", data.username) != null) return errorResponse(res, 500, "User exists");
             logins.users.push({
                 "username": data.username,
                 "password": data.password,

@@ -70,12 +70,14 @@ export function getObjectbyProperty(arr, property, target) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i][property] == target) return arr[i];
     }
+    return null;
 }
 export function getObjectIndexbyProperty(arr, property, target) {
     if (arr == undefined) return null;
     for (let i = 0; i < arr.length; i++) {
         if (arr[i][property] == target) return i;
     }
+    return null;
 }
 
 export function updateXp(req, res) {
